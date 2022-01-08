@@ -4,3 +4,4 @@ def test():
     print("work fine")
 
 test()
+print("bye")
