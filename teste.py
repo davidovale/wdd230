@@ -5,3 +5,4 @@ def test():
 
 test()
 print("bye")
+print("bye again")
