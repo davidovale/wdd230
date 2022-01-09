@@ -1,24 +1,60 @@
 :root{
-    --heading-font: Lato;
-    --paragraph-font: Helvetica, Garamond, sans-serif;
+  --heading-font: Lato;
+  --paragraph-font: Helvetica, Garamond, sans-serif;
+}
+
+main{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 60px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  line-height: 1.5;
+  
 }
 
 
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  
+}
+.content-top{
+width: 500px;
+display: grid;
+grid-template-columns: 150px 1fr;
+grid-template-rows: 1fr;
+grid-column-start: 1;
+grid-row: 1;
+padding: 20px;
+background: #657EC5;
+border-radius: 10px;
+box-shadow: 3px 3px 3px 3px #383838;
+border: 1px solid #CCCCCC;
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    line-height: 1.5;
-    
-  }
+}
 
-  #content {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 10px;
-    overflow: hidden;
-    
-  }
+.content-top img{
+grid-column: 1;
+width: 100px;
+text-align: center;
+border-radius: 10px;
+box-shadow: 2px 2px 2px 2px #999999;
+border: 1px solid #CCCCCC;
 
-  .content-name img{
-      width: 150;
-  }
+}
+
+
+.content-top p{
+grid-column: 2;
+padding: 20px;
+text-align: left;
+font-family: var(--paragraph-font);
+font-size: 30px;
+color: white;
+}
