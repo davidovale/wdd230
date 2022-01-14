@@ -1,0 +1,19 @@
+@media (min-width: 32.5em) {
+
+    div{
+      display: grid;
+      grid-template-columns: 30% auto;
+      
+    }
+
+    .content-top img {
+        max-width: 90%;
+    }
+  .content-top{
+    background: #014105;
+  }
+  .content-bottom{
+    background: #014105;
+  }
+
+}
