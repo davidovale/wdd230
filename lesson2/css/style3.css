@@ -14,18 +14,27 @@ main{
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     line-height: 1em;
+    padding: 10px;
     
   }
+
+div h3{
+  background: #D5E9F5;
+  color: black;
+}
 
 p, a {
   font-family: var(--paragraph-font);
   line-height: 1em;
+  padding: 10px;
 }
 
 
 div{
   display: block;
   margin: 10%;
+  background: #F5F1F1;
+  border-radius: 10px;
 }
 
 header{
