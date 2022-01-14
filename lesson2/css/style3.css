@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
+:root{
+    --heading-font: 'Lato', sans-serif;
+    --paragraph-font: 'Roboto Slab', serif;
+}
+
+main{
+  display: grid;
+  max-width:100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    line-height: 1em;
+    
+  }
+
+div{
+  display: block;
+}
+
+header{
+  grid-row: 1;
+  grid-column: 1/3;
+  display: block;
+  padding: 15px;
+}
+
+.principle-1{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.principle-2{
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.principle-3{
+  grid-row: 1;
+  grid-column: 3;
+}
+
+footer{
+  grid-row: 3;
+  grid-column: 1/4;
+  padding: 10px;
+  display: block;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 550px) { 
+/* beginning of media query */
+    main {
+    display: block;
+    }
+  
+    h2 {
+    margin-bottom: 0.5em;
+  }
+    
+/* end of media query */ 
+} 
+
+@media (min-width: 32.5em) {
+  main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+  #hicks {
+    grid-column: 1;
+    display: block;
+  }
+  
+  #fitts {
+    grid-column: 2;
+    display: block;
+  }
+  
+  #white-clean {
+    grid-column: 1/3;
+    display: block;
+  }
+}
+
+@media (min-width: 64em) {
+  main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #hicks {
+    grid-column: 1;
+    display: block;
+  }
+  
+  #fitts {
+    grid-column: 2;
+    display: block;
+  }
+  
+  #white-clean {
+    grid-column: 3;
+    display: block;
+  }
+}
