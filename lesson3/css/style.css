@@ -13,7 +13,7 @@ body {
 /* phone or baseline views **************************/
 header {
 	background-color: #CBBBAC;
-	display: block;
+	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
