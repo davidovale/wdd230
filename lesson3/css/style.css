@@ -5,9 +5,16 @@
 	box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
+:root{
+    --heading-font: 'Lato', sans-serif;
+    --paragraph-font: 'Roboto Slab', serif;
+}
+
 body {
 	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+	font-family: var(--heading-font);
 }
 
 /* phone or baseline views **************************/
