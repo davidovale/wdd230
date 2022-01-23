@@ -5,48 +5,108 @@
 	box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
-
-:root{
-    --heading-font: 'Lato', sans-serif;
-    --paragraph-font: 'Roboto Slab', serif;
-}
-
 body {
 	font-size: 16px;
-	font-family: var(--heading-font);
+	font-family: "Sansita", Ubuntu, sans-serif;
 }
 
 /* phone or baseline views **************************/
 header {
+  max-width: 75%;
+  margin: 1.5em auto;
 	background-color: #CBBBAC;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
+	display: block;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-footer {
-	background-color: #CBBBAC;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+.content-top{
+  
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-start: 1;
+  grid-row: 1;
+  padding: 20px;
+  background: #CBBBAC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  
 }
 
-header img{
-  width: 100px;
-  float: left;
-  max-width: 100%;
-  border-radius: 20px;
-}
+.content-top img{
+  grid-column: 1;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 80%;
+  
+  }
 
-label{
+h1, h3 {
+  font-family: var(--heading-font);
+  line-height: 1em;
+  padding: 10px;
+	font-size: 1.1rem;
   color: black;
 }
+h2 {
+  font-family: var(--heading-font);
+  line-height: 1em;
+  padding: 10px;
+	color: #536878;
+}
+
+
+.content-top h1{
+  grid-column: 2;
+  padding: 0.5em;
+  text-align: left;
+  font-family: var(--paragraph-font);
+  font-size: 1.5em;
+  color: black;
+}
+
+main div{
+  display: block;
+  margin: 10%;
+  background: #F5F1F1;
+  border-radius: 10px;
+}
+
+p, a {
+  font-family: var(--paragraph-font);
+  line-height: 1em;
+  padding: 10px;
+}
+.box-logo, .box-domain, .box-purpose, .box-site-purpose{
+  margin: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	background-color: #eeeeee;
+}
+
+.box-logo{
+	overflow: hidden;
+}
+
+.box-logo img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.box-logo:hover img{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.box-logo h3, .box-purpose h3, .box-site-purpose h3, .box-domain h3{
+  font-size: 2em;
+  text-align: center;
+}
+
 
 footer p {
   font-family: "Sansita", Ubuntu, sans-serif;
@@ -56,19 +116,37 @@ footer p {
   font-size: 15px;
 }
 
+.box-purpose p{
+  font-size: 20px;
+}
+
+.box-domain p{
+  font-size: 16px;
+}
+
+
+footer {
+	background-color: #CBBBAC;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+label{
+  color: black;
+}
+
+
+
 
 header,
 main,
 footer {
 	max-width: 767px;
 	margin: 0 auto;
-}
-h1 {
-	font-size: 1.1rem;
-  color: black;
-}
-h2 {
-	color: #536878;
 }
 
 nav {
@@ -101,7 +179,7 @@ main {
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 }
-main article {
+main article{
 	margin: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 1rem;
@@ -111,7 +189,7 @@ main article {
 main article ul {
 	margin: 1rem 0 0 1rem;
 }
-main picture {
+main picture{
 	display: none;
 	margin: 1rem;
 }
@@ -176,4 +254,61 @@ main picture {
 	article:nth-child(3) {
 		grid-column: span 1;
 	}
+}
+
+@media screen and (max-width: 600px) { 
+/* beginning of media query */
+    main {
+    display: block;
+    }
+  
+    h2 {
+    margin-bottom: 0.5em;
+  }
+    
+/* end of media query */ 
+} 
+
+@media (min-width: 32.5em) {
+  main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+   .box-logo {
+    grid-column: 1;
+    display: block;
+  }
+  
+   .box-purpose {
+    grid-column: 2;
+    display: block;
+  }
+  
+   .box-domain {
+    grid-column: 1/3;
+    display: block;
+  }
+}
+
+@media (min-width: 64em) {
+  main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+  .box-logo {
+    grid-column: 1;
+    display: block;
+  }
+  
+  .box-purpose {
+    grid-column: 2;
+    display: block;
+  }
+  
+  .box-domain {
+    grid-column: 3;
+    display: block;
+  }
 }
