@@ -413,11 +413,6 @@ main picture{
     grid-column: 1/3;
     display: block;
   }
-  
-  .personas1{
-    grid-column:1;
-    display: block
-  }
 }
 
 @media (min-width: 64em) {
