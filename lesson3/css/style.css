@@ -49,12 +49,6 @@ h1, h3 {
 	font-size: 1.1rem;
   color: black;
 }
-h2 {
-  font-family: var(--heading-font);
-  line-height: 1em;
-  padding: 10px;
-	color: #536878;
-}
 
 
 .content-top h1{
@@ -62,7 +56,7 @@ h2 {
   padding: 0.5em;
   text-align: left;
   font-family: var(--paragraph-font);
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
 }
 
@@ -78,7 +72,7 @@ p, a {
   line-height: 1em;
   padding: 10px;
 }
-.box-logo, .box-domain, .box-purpose, .box-site-purpose{
+.box-logo, .box-domain, .box-purpose, .box-site-purpose, .box-color{
   margin: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 1rem;
@@ -102,11 +96,23 @@ p, a {
 	transform: scale(1.1);
 }
 
-.box-logo h3, .box-purpose h3, .box-site-purpose h3, .box-domain h3{
+.box-logo h3, .box-purpose h3, .box-site-purpose h3, .box-domain h3, .box-color h3{
   font-size: 2em;
   text-align: center;
 }
 
+.box-color h4{
+  text-align: center;
+}
+
+.box-color div{
+  height: 3em;
+  border: 1px solid black;
+}
+
+.color-information{
+  width: 100%;
+}
 
 footer p {
   font-family: "Sansita", Ubuntu, sans-serif;
