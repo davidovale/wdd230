@@ -231,9 +231,7 @@ html{
 /* small.css */
 /* MENU */
 
-main{
-    border: 1px solid yellow;
-}
+
 h1, p {margin: 0 2vw;}
 /* button menu*/
 nav button{
@@ -281,3 +279,33 @@ nav ul.open {
 #hamburguerBtn.open span:nth-child(1) {display: none;}
 #hamburguerBtn.open span:nth-child(2) {display: block;}
 /* END MENU */
+
+@media only screen and (max-width: 959px){
+    main{
+        border: 1px solid yellow;
+    }
+
+    main{
+        display: block;
+    }
+
+    .content{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .event, .weather, .join, .middle-main, .news-release{
+        height: 10em;
+    }
+    .middle-main{
+        order: -1;
+        
+    }
+    .main-nav-footer h2{
+        font-size: 1.2rem;
+        padding: 0px;
+    }
+    .text-footer, .location-footer p, a{
+        font-size: 1rem;
+    }
+}
