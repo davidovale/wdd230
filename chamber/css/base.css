@@ -147,6 +147,24 @@ html{
 .back-footer{
     background: var(--background-header);
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.main-nav-footer h2{
+    font-size: 2rem;
+    padding: 0px;
+}
+.test-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.test-flex img{
+    width: 20%;
 }
 
 .container-footer{
@@ -175,7 +193,11 @@ html{
 
 
 .text-footer{
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.location-footer{
+    font-size: 18px;
 }
 
 .location{
@@ -198,6 +220,11 @@ html{
     color: black;
     border-top: 1px solid black;
     
+    
+}
+
+.background-footer{
+    background: var(--background-header);
 }
 
 /* END FOOTER*/

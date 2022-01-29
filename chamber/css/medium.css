@@ -41,16 +41,42 @@
     .back-footer{
         display: flex;
         flex-direction: column;
-        max-width: 85%;
+        max-width: 100%;
         
         
     }   
 
-    .container-footer, .content-footer{
+    h2{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .content-footer{
         display: flex;
         flex-direction: column;
         max-width: 100%;
         align-items: center;
+        padding: 0px;
+        margin: 10px;
+    }
+
+    .test-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .main-nav-footer{
+        padding: 0px;
+    }
+    
+    .test-flex img{
+        width: 30%;
+        
     }
 
     footer{
@@ -60,7 +86,8 @@
     .container-footer img{
         display: flex;
         justify-content: space-around;
-        width: 9%;
+        width: 50px;
+        padding: 0px;
     }
 
     .img-facebook, .img-linkedin {
