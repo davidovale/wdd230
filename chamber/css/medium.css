@@ -1,0 +1,71 @@
+/* 35rem is also 560px when basefont is 16px */
+@media only screen and (max-width: 32.5rem){
+    main{
+        border: 1px solid red;
+    }
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+    main{
+        display: block;
+    }
+
+    .content{
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+    .event, .weather, .join, .middle-main, .news-release{
+        height: 10em;
+    }
+    .middle-main{
+        order: -1;
+        
+    }
+
+
+    h1{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .header-date{
+        font-size: 0.9em;
+    }
+
+    #img-top{
+        width: 30%;
+    }
+
+    .back-footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 85%;
+        
+        
+    }   
+
+    .container-footer, .content-footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    footer{
+        display: block;
+    }
+
+    .container-footer img{
+        display: flex;
+        justify-content: space-around;
+        width: 9%;
+    }
+
+    .img-facebook, .img-linkedin {
+        width: 20px;
+    }
+
+}
+
