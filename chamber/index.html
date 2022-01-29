@@ -1,0 +1,105 @@
+<!-- Index -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chamber Home Page Build</title>
+    <meta charset="utf-8">
+    <meta name="description" content="In this assignment you will build the structure and styling from scratch using your website 
+    planning document specifications and the provided sketches as guides.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+  </head>
+  <body onload="date()">
+      <header>
+            <!-- The header must contain a logo, site name, and navigation (nav), spanning the entire screen. 
+                You may elect to limit the content width within the header.  -->
+                
+                <div class="container">
+                    <nav class="main-nav">
+                        <img src="images/newlogo.png" alt="Londrina Society Logo" class="logo">
+                        <h1>Londrina Society</h1>
+                        <ul class="main-menu">
+                            <li><a href="#">Discover</a></li>
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="#">Join</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="right-menu">
+                            <li>
+                                <a target="blank" href="https://www.facebook.com/">
+                                    <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="blank" href="https://linkedin.com/">
+                                    <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-date">
+                    <p id="date"></p>
+                </div>
+      </header>
+      <main>
+          <div class="content">
+                <div class="event">
+                    <p>Event</p>
+                </div>
+                <div class="weather">
+                    <p>Weather</p>
+                </div>
+                <div class="join">
+                    <p>Join</p>
+                </div>
+                <div class="middle-main">
+                    <p>Hero with site name and call to action</p>
+                </div>
+                <div class="news-release">
+                    <p>News Release</p>
+                </div>
+                <div class="spotlight">
+                    <section class="spot1">
+                        <p>SpotLight 1</p>
+                    </section>
+                    <section class="spot2">
+                        <p>SpotLight 2</p>
+                    </section>
+                    <section class="spot3">
+                        <p>SpotLight 3</p>
+                    </section>
+                </div>
+          </div>
+
+      </main>
+      <footer>
+            <div class="back-footer">
+                <div class="container-footer">
+                    <img src="images/newlogo.png" alt="Londrina Society Logo" class="logo">
+                    <nav class="main-nav-footer">
+                        <h2>Londrina Society</h2>
+                        <label class="text-footer">1246 Tiradentes Avenue</label>
+                        <label class="text-footer">Londrina-PR, Brazil</label>
+                    </nav>
+                    <section class="location">
+                        <p>londrina_society@gmail.com</p>
+                        <p>(+55) 433024-8714</p>
+                        
+                        📍<a target="blank" href="https://goo.gl/maps/or3ENev6iGPcJnYh9">Location Map</a>
+                    </section>
+                </div>
+                <div class="content-footer">
+                    <p>
+                        <label id="copy"></label> <label id="year"> </label> Londrina Society | <b>Davi F. do Vale</b> | 
+                        WDD 230 Project | <label id="date-footer"></label>
+                    </p>
+                </div>
+            </div> 
+      </footer>
+      <script src="js/script.js"></script>  
+  </body>
+  </html>
