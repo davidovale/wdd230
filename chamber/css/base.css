@@ -13,6 +13,13 @@ body{
     padding: 20px;
 }
 
+h1, h2, h3, h4{
+    font-family: var(--heading-font);
+  }
+p, nav, label{
+    font-family: var(--paragraph-font);
+}
+
 header{
     background-color: var(--background-header);
     color: black;
@@ -281,10 +288,6 @@ nav ul.open {
 /* END MENU */
 
 @media only screen and (max-width: 959px){
-    main{
-        border: 1px solid yellow;
-    }
-
     main{
         display: block;
     }

@@ -1,8 +1,8 @@
 /* 35rem is also 560px when basefont is 16px */
+
+
 @media only screen and (max-width: 32.5rem){
-    main{
-        border: 1px solid red;
-    }
+    
     nav ul li a {
         padding: .5rem 1rem;
     }
