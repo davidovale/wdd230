@@ -1,0 +1,110 @@
+<!-- Index -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chamber Home Page Build</title>
+    <meta charset="utf-8">
+    <meta name="description" content="In this assignment you will build the structure and styling from scratch using your website 
+    planning document specifications and the provided sketches as guides.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+  </head>
+  <body onload="date()">
+      <header>
+        <div class="content-header">
+            <div class="img-name">
+                <img src="images/newlogo.png" alt="Londrina Society Logo" class="logo-header" id="img-top">
+                <h1>Londrina Society</h1>
+            </div>
+            <div class="images-header">
+                <a target="blank" href="https://www.facebook.com/">
+                    <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                </a>            
+                <a target="blank" href="https://linkedin.com/">
+                    <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                </a>
+            </div>
+        </div>
+        <div class="header-date">
+            <p id="date"></p>
+        </div>
+            <!-- NAVIGATION HERE -->
+            <nav>
+                <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>  
+                </ul>
+            </nav>
+      </header>
+      <main>
+          <div class="content">
+                <div class="event">
+                    <p>Event</p>
+                </div>
+                <div class="weather">
+                    <p>Weather</p>
+                </div>
+                <div class="join">
+                    <p>Join</p>
+                </div>
+                <div class="middle-main">
+                    <p>Hero with site name and call to action</p>
+                </div>
+                <div class="news-release">
+                    <p>News Release</p>
+                </div>
+                <div class="spotlight">
+                    <div>
+                        <p>SpotLight 1</p>
+                    </div>
+                    <div>
+                        <p>SpotLight 2</p>
+                    </div>
+                    <div>
+                        <p>SpotLight 3</p>
+                    </div>
+                </div>
+          </div>
+
+      </main>
+      <footer>
+          <div class="background-footer">
+            <div class="back-footer">
+                <div class="test-flex">
+                    <img src="images/newlogo.png" alt="Londrina Society Logo" class="logo">
+                    
+                    <nav class="main-nav-footer">
+                        <h2>Londrina Society</h2>
+                        <label class="text-footer">1246 Tiradentes Avenue</label>
+                        <label class="text-footer">Londrina-PR, Brazil</label>
+                    </nav>
+                </div>
+                <div class="location-footer">
+                    <p>londrina_society@gmail.com</p>
+                    <p>(+55) 433024-8714</p>
+                    
+                    📍<a target="blank" href="https://goo.gl/maps/or3ENev6iGPcJnYh9">Location Map</a>
+                </div>
+            </div> 
+                <div class="content-footer">
+                    <p>
+                        <label id="copy"></label> 
+                        <label id="year"> </label> 
+                        <label id="londrina">&nbsp;Londrina Society </label><label class="bar">|</label> 
+                        <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label><label class="bar">|</label> 
+                        <label id="wdd">&nbsp;WDD 230 Project </label><label class="bar">|</label> &nbsp;
+                        <label id="date-footer"></label>
+                    </p>
+                </div>
+            </div>
+      </footer>
+      <script src="js/script.js"></script>  
+  </body>
+  </html>
