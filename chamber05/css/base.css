@@ -108,9 +108,20 @@ html{
 
 .event h2, .weather h2, .news-release h2{
     padding: 0.2em;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 0 0 0.2em rgb(170, 243, 0), 0 0 0.2em #87F,
+        0 0 0.2em #87F
+}
+
+.spotlight div h2{
+    padding: 0.2em;
     font-size: 1em;
     text-align: center;
+    text-shadow: 0 0 0.2em rgb(170, 243, 0), 0 0 0.2em #87F,
+        0 0 0.2em #87F
 }
+
 
 .event h3{
     padding: 0.2em;
@@ -159,7 +170,7 @@ html{
     
 }
 
-.join a, .middle-main a{
+.join a, .middle-main a, .spotlight-1 a, .spotlight-2 a, .spotlight-3 a{
     text-decoration: none;
     color: #000000;
 }
@@ -224,6 +235,28 @@ html{
 .spotlight div p {
     padding: 1em;
 }
+
+.spotlight-1, .spotlight-2, .spotlight-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spotlight-1 img, .spotlight-2 img{
+    width: 20%;
+}
+
+.spotlight-3 img{
+    width: 25%;
+}
+
+.spotlight-1 p, .spotlight-2 p, .spotlight-3 p{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+
 /* END CONTENT*/
 
 /* FOOTER*/
@@ -395,7 +428,14 @@ nav ul.open {
     .event p{
         font-size: 0.9em;
     }
-    .weather p, .news-release p{
+    .weather p, .news-release p, .spotlight-1 p, .spotlight-2 p{
         font-size: 0.8em;
+    }
+    .event h2, .weather h2, .news-release h2, .spotlight div h2{
+        font-size: 1em;
+    }
+
+    .spotlight-1 img, .spotlight-2 img, .spotlight-3 img {
+        width: 5em;
     }
 }
