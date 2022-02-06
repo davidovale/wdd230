@@ -108,7 +108,7 @@ html{
 
 .event h2, .weather h2, .news-release h2{
     padding: 0.2em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     text-shadow: 0 0 0.2em rgb(170, 243, 0), 0 0 0.2em #87F,
         0 0 0.2em #87F
@@ -124,7 +124,7 @@ html{
 
 
 .event h3{
-    padding: 0.2em;
+    padding: 0.2em 1em;
     font-size: 0.8em;
 }
 
@@ -137,7 +137,7 @@ html{
     grid-row: 2;
 }
 
-.content div:hover{
+.event:hover, .weather:hover, .join:hover, .middle-main:hover, .news-release:hover, .spotlight-1:hover, .spotlight-2:hover, .spotlight-3:hover{
     background-color: #FFFF00;
 }
 
@@ -371,6 +371,11 @@ nav ul li a{
     color: black;
     border-top: 1px solid rgba(0,0,0,0.5);
     font-size: .9rem;
+    
+    
+    transition: all .5s;
+    border: 10px solid transparent;
+	
 }
 
 nav ul li.active a {
@@ -380,6 +385,10 @@ nav ul li.active a {
 
 nav ul li a:hover{
     background-color: rgba(0,0,0,0.1);
+    
+    
+    border: 1px solid #136497;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -403,6 +412,10 @@ nav ul.open {
 @media only screen and (max-width: 959px){
     main{
         display: block;
+    }
+
+    nav {
+        text-align: center;
     }
 
     .content{
