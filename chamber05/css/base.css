@@ -114,6 +114,7 @@ html{
         0 0 0.2em #87F
 }
 
+
 .spotlight div h2{
     padding: 0.2em;
     font-size: 1em;
@@ -160,19 +161,25 @@ html{
     
 }
 
-.join p:nth-child(1), .middle-main p:nth-child(1){
+.join a, .middle-main a{
     padding: 0.5em;
     margin: 1rem 3rem;
     border-radius: 10px;
     font-size: 1em;
     text-align: center;
     background-color: aquamarine;
+    font-weight: bold;
     
 }
 
 .join a, .middle-main a, .spotlight-1 a, .spotlight-2 a, .spotlight-3 a{
     text-decoration: none;
     color: #000000;
+}
+
+.join{
+    display: flex;
+    flex-direction: column;
 }
 
 .middle-main a{
@@ -255,7 +262,9 @@ html{
     text-decoration: underline;
 }
 
-
+.negrito{
+    font-weight: bold;
+}
 
 /* END CONTENT*/
 
@@ -438,7 +447,7 @@ nav ul.open {
         font-size: 1rem;
     }
 
-    .event p{
+    .event p, .join p{
         font-size: 0.9em;
     }
     .weather p, .news-release p, .spotlight-1 p, .spotlight-2 p{
