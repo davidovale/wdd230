@@ -6,7 +6,7 @@
     --background-header: #CBBBAC;
     --background-menu: #433324;
     --selected-menu: #FFFF00;
-    --background-div: #eeeeee;
+    --background-div: #FFFFD8;
 }
 
 body{
@@ -87,18 +87,38 @@ html{
     gap: 10px;
 }
 
+.content div {
+    border-radius: 10px;
+}
+
 .event, .weather, .join{
     background: var(--background-div);
     height: 200px;
 }
 
-.event p, .weather p, .join p{
+.weather p, .join p{
     padding: 1em;
 }
 
 .event{
     grid-column: 1;
     grid-row: 1;
+    
+}
+
+.event h2, .weather h2{
+    padding: 0.2em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.event h3{
+    padding: 0.2em;
+    font-size: 0.8em;
+}
+
+.event p{
+    font-size: 16px;
 }
 
 .weather{
@@ -106,14 +126,66 @@ html{
     grid-row: 2;
 }
 
+.content div:hover{
+    background-color: #FFFF00;
+}
+
+.weather p{
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.5em;
+}
+
+.weather img{
+    max-width: 5rem;
+    padding: 0px 1em;
+    float: left;
+    align-items: top;
+}
+
 .join{
     grid-column: 1;
     grid-row: 3;
+    
+}
+
+.join p:nth-child(1), .middle-main p:nth-child(1){
+    padding: 0.5em;
+    margin: 1rem 3rem;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+    background-color: aquamarine;
+    
+}
+
+.join a, .middle-main a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.middle-main a{
+    text-align: right;
 }
 
 .middle-main{
     grid-column: 2;
     grid-row: 1/3;
+    background-color: var(--background-div);
+    background-image: url("../images/office.jpg");
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+}
+
+.middle-main p:nth-child(1){
+    grid-row: 4;
+}
+
+.middle-main h2{
+    padding: 0.2em;
+    text-align: center;
+    background-color: var(--background-header);
 }
 
 .news-release{
@@ -121,7 +193,7 @@ html{
     grid-row: 3/4;
 }
 
-.middle-main, .news-release{
+.news-release{
     background: var(--background-div);
     
 }
@@ -280,6 +352,9 @@ nav ul.open {
     display: block;
 }
 
+
+
+
 #hamburguerBtn span:nth-child(1) {display: block;}
 #hamburguerBtn span:nth-child(2) {display: none;}
 
@@ -310,5 +385,12 @@ nav ul.open {
     }
     .text-footer, .location-footer p, a{
         font-size: 1rem;
+    }
+
+    .event p{
+        font-size: 0.9em;
+    }
+    .weather p{
+        font-size: 0.8em;
     }
 }

@@ -94,5 +94,12 @@
         width: 20px;
     }
 
+    .weather img{
+        max-width: 20%;
+        padding: 1em;
+        float: left;
+        
+    }
+
 }
 
