@@ -173,19 +173,24 @@ html{
     grid-row: 1/3;
     background-color: var(--background-div);
     background-image: url("../images/office.jpg");
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 .middle-main p:nth-child(1){
-    grid-row: 4;
+    order: 1;
+    align-self: flex-end;
 }
 
 .middle-main h2{
     padding: 0.2em;
     text-align: center;
     background-color: var(--background-header);
+    border-radius: 10px;
 }
 
 .news-release{
