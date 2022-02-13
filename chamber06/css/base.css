@@ -142,14 +142,20 @@ html{
     background-color: #FFFF00;
 }
 
-.weather p{
+.weather p:nth-child(3){
     text-align: center;
-    font-size: 0.9em;
+    font-size: 16px;
+    padding: 0.2em;
+}
+
+.weather p:nth-child(4), .weather p:nth-child(5), .weather p:nth-child(6){
+    text-align: center;
+    font-size: 0.8em;
     padding: 0.5em;
 }
 
 .weather img{
-    max-width: 5rem;
+    width: 20%;
     padding: 0px 1em;
     float: left;
     
@@ -190,7 +196,8 @@ html{
     grid-column: 2;
     grid-row: 1/3;
     background-color: var(--background-div);
-    background-image: url("../images/office.jpg");
+    /*background-image: url("../images/office.jpg");*/
+    /*background-image: url("../images/wdd230-org.jpg");*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -408,7 +415,10 @@ nav ul.open {
     display: block;
 }
 
-
+.herodivlabel{
+    width: 100%;
+    text-align: center;
+}
 
 
 #hamburguerBtn span:nth-child(1) {display: block;}
@@ -417,6 +427,14 @@ nav ul.open {
 #hamburguerBtn.open span:nth-child(1) {display: none;}
 #hamburguerBtn.open span:nth-child(2) {display: block;}
 /* END MENU */
+
+/* PICTURE WEEK 06
+.mypicture img{
+    max-width: 100px;
+}
+
+*/
+
 
 @media only screen and (max-width: 959px){
     main{
@@ -437,6 +455,7 @@ nav ul.open {
     }
     .middle-main{
         order: -1;
+        height: 300px;
         
     }
     .main-nav-footer h2{
@@ -453,6 +472,7 @@ nav ul.open {
     .weather p, .news-release p, .spotlight-1 p, .spotlight-2 p{
         font-size: 0.8em;
     }
+    
     .event h2, .weather h2, .news-release h2, .spotlight div h2{
         font-size: 1em;
     }
@@ -460,4 +480,43 @@ nav ul.open {
     .spotlight-1 img, .spotlight-2 img, .spotlight-3 img {
         width: 5em;
     }
+
+    .mypicture img {
+        display: block;
+        margin: auto;
+        max-width: 50%;
+      }
+    
+    .herodivlabel{
+        width: 30%;
+        padding: auto;
+    }
+
+    .herodivlabel h3{
+        font-size: 0.9em;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .herodivlabel h3::after{
+        content: "Medium Size";
+    }
+
+    .content-picture{
+        margin: 10px;
+        width: 67%;
+    }
+
+    .weather img{
+        width: 10%;
+        
+    }
 }
+
+/* end larg  
+
+nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+*/

@@ -16,7 +16,7 @@
       <header>
         <div class="content-header">
             <div class="img-name">
-                <img src="images/newlogo.png" alt="Londrina Society Logo" class="logo-header" id="img-top">
+                <img src="images/newlogo.webp" alt="Londrina Society Logo" class="logo-header" id="img-top">
                 <h1>Londrina Society</h1>
             </div>
             <div class="images-header">
@@ -53,17 +53,30 @@
                 <div class="weather">
                     <h2>Weather</h2>
                     <img src="images/weather.png" alt="weather">
-                    <p class="negrito">33ºC</p>
+                    <p class="negrito"><span id="temperature">30</span>&#176;F</p>
                     <p>🌥️ Partly Cloudy</p>
-                    <p>Wind Speed: 2.5 km/h</p>
+                    <p>Wind Speed: <span id="speed">3.1</span> km/h</p>
+                    <p>Wind Chill:<span id="wind"></span></p>
                 </div>
                 <div class="join">
                     <a href="#">Join Us</a>
                     <p>Discover how to join the Londrina Society and how it will benefit your organization.</p>
                 </div>
                 <div class="middle-main">
+                    <div class="herodivlabel">
+                        <h3>Image Size: </h3>
+                    </div>
+                    <div class="content-picture">
+                        <picture class="mypicture">
+                            <source media="(max-width: 32.5rem)" srcset="images/wdd230-org-s.jpg"> <!-- small size-->
+                            <source media="(max-width: 959px)" srcset="images/wdd230-org-m.jpg"> <!-- medium size-->
+                            <img src="images/wdd230-org.jpg" alt="wdd230-org image"> <!-- large size-->
+                        </picture>
+                    </div>
+                    <!--
                     <h2>Welcome to Londrina Society</h2>
                     <a href="#">Join the Chamber</a>
+                    -->
                 </div>
                 <div class="news-release">
                     <h2>News Release</h2>
@@ -127,5 +140,6 @@
             </div>
       </footer>
       <script src="js/script.js"></script>  
+      <script src="js/windchill.js"></script>
   </body>
   </html>

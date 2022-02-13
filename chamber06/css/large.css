@@ -12,14 +12,24 @@
     nav ul li a{
         border: none;
     }
-
     
-    
-}
-/* end larg  
+    .mypicture img {
+        display: block;
+        margin: auto;
+        max-width: 80%;
 
-nav ul li a {
-        padding: .5rem 1rem;
+      }
+
+      .herodivlabel h3::after{
+        content: "Large Size";
+    }
+    
+    .content-picture{
+        margin: 10px;
+        width: 80%;
     }
 
-*/
+    .join p{
+        font-size: 0.9em;
+    }
+}
