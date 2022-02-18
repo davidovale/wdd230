@@ -32,8 +32,9 @@ if('IntersectionObserver' in window) {
 
   */
 
-const images = document.querySelectorAll("[data-src]")
-
+const images = document.querySelectorAll("[data-src]");
+let label = document.getElementsByClassName("lbltext").innerHTML;
+//let label2 = document.getElementById("spantext").innerHTML;
 function preloadImage(img){
     const src = img.getAttribute("data-src")
     if(!src){
