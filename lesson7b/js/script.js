@@ -73,6 +73,7 @@ if(lastDay==0){
     daysDisplay.textContent = currentDate(); //show the value on the page
     localStorage.setItem("lastDay-ls", currentDate()); //store the value
 }else{
+    alert(lastDay);
     auxLast = lastDay;
     auxToday = currentDate();
     const result = calculateDate(auxToday, auxLast);
@@ -104,6 +105,6 @@ function calculateDate(today, last){
     //console.log(diffTime + " milliseconds");
     //console.log(diffDays + " days");
 
-    return diffDays + " day(s)";
+    return `${diffDays} day(s)`;
 }
 
