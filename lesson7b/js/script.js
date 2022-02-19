@@ -51,6 +51,7 @@ images.forEach(image => {
 //const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");
 const daysDisplay = document.querySelector(".last-day");
+const testando = document.querySelector(".testlbl");
 
 // >>>>>>>>>>>>>>>>>>>>>TEST BY UNCOMMENTING THE LINE BELOW<<<<<<<<<<<<<<<<<<<<<<<<<
 //localStorage.setItem("lastDay-ls", "01/15/2022");
@@ -69,11 +70,10 @@ if (numVisits !== 0) {
 	visitsDisplay.textContent = `This is your first visit!`;
 }
 
-if(lastDay==0){
+if(lastDay==0 || lastDay == null){
     daysDisplay.textContent = currentDate(); //show the value on the page
     localStorage.setItem("lastDay-ls", currentDate()); //store the value
 }else{
-    alert(lastDay);
     auxLast = lastDay;
     auxToday = currentDate();
     const result = calculateDate(auxToday, auxLast);
