@@ -145,8 +145,8 @@
     .img-2, .img-4 {
         -webkit-filter: sepia(0%);
         filter: sepia(0%);
-        -webkit-transition: 0;
-        transition: 0;
+        -webkit-transition: none;
+        transition: none;
     }
     .img-3 {
         -webkit-transition: none;
