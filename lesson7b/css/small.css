@@ -153,6 +153,12 @@
         transition: none;
       }
 
+      .img-3:hover,
+      .img-3.hover {
+        -webkit-transform: none;
+        transform: none;
+      }
+
     
     .img-8 {
         -webkit-transition: none;
