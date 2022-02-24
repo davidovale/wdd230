@@ -34,7 +34,7 @@ td{
 table {
 	margin: 10px auto;
 	border: thin solid var(--border);
-	box-shadow: 0 0 30px var(--shadow);
+	box-shadow: 20px 10px 20px rgb(98, 140, 166);
 	border-collapse: collapse;
 	width: 30%;
 }
