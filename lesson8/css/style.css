@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
 :root {
+	--font: 'Ubuntu', sans-serif;
 	--back: #7fb9c2;
   --back2: #628ca6;
   --white: white;
@@ -8,6 +12,10 @@
 	--shadow: hsl(0,0%,50%);
 	--even: #e7ffed;
 	--odd: #e7f0ed;
+}
+
+body{
+	font-family: var(--font);
 }
 
 tfoot{
@@ -28,7 +36,7 @@ table {
 	border: thin solid var(--border);
 	box-shadow: 0 0 30px var(--shadow);
 	border-collapse: collapse;
-	width: 400px;
+	width: 30%;
 }
 
 caption {
@@ -70,4 +78,17 @@ tbody tr:nth-child(even) {
 
 tbody tr:nth-child(even) {
 	background-color: var(--odd);
+}
+
+
+@media only screen and (max-width: 32.5rem){
+	main{
+		width: 50%;
+	}
+	th{
+		font-size: 0.9em;
+	}
+	td, .row2{
+		font-size: 0.8em;
+	}
 }
