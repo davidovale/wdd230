@@ -8,22 +8,15 @@ partes.forEach(function (parte) {
     data[chave] = valor;
     
 });
-const firstName = data['firstName'].split("+");
-const lastName = data['lastName'].split("+");
-let auxFirst = "";
-for (i in firstName){
-    auxFirst += firstName[i]+" ";
-}
-let auxLast = "";
-for (i in lastName){
-    auxLast += lastName[i]+" ";
-}
+const firstName = data['firstName'].replaceAll('+', ' ');
+const lastName = data['lastName'].replaceAll('+', ' ');
 const email = data['txtEmail'].replace('%40', '@');
-let tel = data['tel'].replace('%2B','-');
-tel = tel.replace(/[^0-9]/g, ' ');
+let tel = data['tel'].replaceAll('+',' ');
+tel = tel.replaceAll('%2B','+');
 
 
-document.querySelector("#firstName").innerHTML = auxFirst;
-document.querySelector("#lastName").innerHTML = auxLast;
+
+document.querySelector("#firstName").innerHTML = firstName;
+document.querySelector("#lastName").innerHTML = lastName;
 document.querySelector("#txtEmail").innerHTML = email;
 document.querySelector("#txtTel").innerHTML = tel;

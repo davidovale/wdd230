@@ -101,7 +101,7 @@
                             <h2>Business Information</h2>
                             <label for="txtBusPosition">Business Position</label>
                             <input type="text" id="txtBusPosition" name="txtBusPosition" alt="Business Position" 
-                            required pattern="*[A-Z][a-z]" 
+                            required pattern="[[:alpha:]]" minlength="7"
                             oninvalid="this.setCustomValidity('☝🏼 Please enter only alpha characters.')" 
                             onvalid="this.setCustomValidity('')">¨
                         </div>
