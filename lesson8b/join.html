@@ -74,10 +74,10 @@
             <div class="divform">
                 <h1>Join Page</h1>
                 <form name="myForm" method="get" action="thankyou.html">
-                    <section name="personalInformation" class="personalInformation">
+                    <section class="personalInformation">
                         <div>
                             <h2>Personal Information</h2>
-                            <label for="firstName" name="lblname">First Name <span class="required">*</span></label>
+                            <label for="firstName">First Name <span class="required">*</span></label>
                             <input type="text" id="firstName" name="firstName" required >
                         </div>
                         <div>
@@ -85,7 +85,7 @@
                             <input type="text" id="lastName" name="lastName" class="lastName" required>
                         </div>
                     </section>
-                    <section name="contactInformation" class="contactInformation">
+                    <section class="contactInformation">
                         <div>
                             <h2>Contact Information</h2>
                             <label for="txtEmail">Email <span class="required">*</span></label>
@@ -96,25 +96,25 @@
                             <input type="tel" id="tel" name="tel" required>
                         </div>
                     </section>
-                    <section name="businessInformation" class="businessInformation">
+                    <section class="businessInformation">
                         <div>
                             <h2>Business Information</h2>
                             <label for="txtBusPosition">Business Position</label>
-                            <input type="text" id="txtBusPosition" name="txtBusPosition" alt="Business Position" 
+                            <input type="text" id="txtBusPosition" name="txtBusPosition" 
                             required pattern="[[:alpha:]]" minlength="7"
                             oninvalid="this.setCustomValidity('☝🏼 Please enter only alpha characters.')" 
-                            onvalid="this.setCustomValidity('')">¨
+                            >¨
                         </div>
                         <div>
                             <label for="txtBusName">Business Name <span class="required">*</span></label>
-                            <input type="text" id="txtBusName" name="txtBusName" alt="Business Name" required>
+                            <input type="text" id="txtBusName" name="txtBusName" required>
                         </div>
                         <div>
                             <label for="textarea">Business Description</label>
                             <textarea id="textarea" name="textarea" class="textarea" cols="36" rows="5"></textarea>
                         </div>
                     </section>
-                    <section name="membershipLevel" class="membershipLevel">
+                    <section class="membershipLevel">
                         <div class="radioLevel">
                             <h2>Membership Level</h2>
                             <table>
