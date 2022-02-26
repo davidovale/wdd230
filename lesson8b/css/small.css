@@ -176,4 +176,9 @@
         filter: grayscale(0);
     }
 
+    .information div p{
+        font-size: 1em;
+        padding: 1em;
+    }
+
 }

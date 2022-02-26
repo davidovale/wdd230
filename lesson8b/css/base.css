@@ -140,7 +140,27 @@ h2{
     font-weight: bold;
 }
 
+.personalInformation input, .contactInformation input, .businessInformation input{
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 0px 0px 0px 15px;
+}
+
+.textarea{
+    border-radius: 10px;
+}
+
 /* End Form */
+
+.information{
+    padding: 50px;
+}
+
+.information div p{
+    font-size: 20px;
+    padding: 10px;
+}
 
 .content{
     max-width: 100%;
@@ -483,6 +503,21 @@ nav ul.open {
     text-align: center;
 }
 
+#txtBusPosition,
+#txtBusPosition:focus,
+#txtBusPosition:valid {
+	background-color: #bed;
+}
+
+#txtBusPosition:invalid {
+	background-color: lightcoral;
+	border: 1px solid red;
+}
+
+#txtBusPosition:valid {
+	background-color: #bed;
+	color: #000;
+}
 
 #hamburguerBtn span:nth-child(1) {display: block;}
 #hamburguerBtn span:nth-child(2) {display: none;}

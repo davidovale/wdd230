@@ -37,11 +37,11 @@
               <nav>
                   <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
                   <ul id="primaryNav">
-                      <li><a href="#" class="active">Home</a></li>
+                      <li><a href="#">Home</a></li>
                       <li><a href="#">Products</a></li>
                       <li><a href="#">Location</a></li>
                       <li><a href="#">Photos</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="join.html" class="active">Join</a></li>
                       <li><a href="#">Blog</a></li>    
                   </ul>
               </nav>
@@ -73,7 +73,7 @@
             
             <div class="divform">
                 <h1>Join Page</h1>
-                <form name="myForm" method="get">
+                <form name="myForm" method="get" action="thankyou.html">
                     <section name="personalInformation" class="personalInformation">
                         <div>
                             <h2>Personal Information</h2>
@@ -81,34 +81,37 @@
                             <input type="text" id="firstName" name="firstName" required >
                         </div>
                         <div>
-                            <label for="lastName" name="lblLastName">Last Name</label>
+                            <label for="lastName" name="lblLastName">Last Name <span class="required">*</span></label>
                             <input type="text" id="lastName" name="lastName" class="lastName" required>
                         </div>
                     </section>
                     <section name="contactInformation" class="contactInformation">
                         <div>
                             <h2>Contact Information</h2>
-                            <label for="txtEmail">Email</label>
+                            <label for="txtEmail">Email <span class="required">*</span></label>
                             <input type="email" id="txtEmail" name="txtEmail" placeholder="example@gmail.com" required>
                         </div>
                         <div>  
-                            <label for="tel">Tel</label>
-                            <input type="tel" id="tel" name="tel">
+                            <label for="tel">Tel <span class="required">*</span></label>
+                            <input type="tel" id="tel" name="tel" required>
                         </div>
                     </section>
                     <section name="businessInformation" class="businessInformation">
                         <div>
                             <h2>Business Information</h2>
                             <label for="txtBusPosition">Business Position</label>
-                            <input type="text" id="txtBusPosition" name="txtBusPosition" alt="Business Position" onkeyup="inputBusPosition()">
+                            <input type="text" id="txtBusPosition" name="txtBusPosition" alt="Business Position" 
+                            required pattern="*[A-Z][a-z]" 
+                            oninvalid="this.setCustomValidity('☝🏼 Please enter only alpha characters.')" 
+                            onvalid="this.setCustomValidity('')">¨
                         </div>
                         <div>
-                            <label for="txtBusName">Business Name</label>
-                            <input type="text" id="txtBusName" name="txtBusName" alt="Business Name" required">
+                            <label for="txtBusName">Business Name <span class="required">*</span></label>
+                            <input type="text" id="txtBusName" name="txtBusName" alt="Business Name" required>
                         </div>
                         <div>
                             <label for="textarea">Business Description</label>
-                            <textarea id="textarea" name="textarea" cols="22" rows="5"></textarea>
+                            <textarea id="textarea" name="textarea" class="textarea" cols="36" rows="5"></textarea>
                         </div>
                     </section>
                     <section name="membershipLevel" class="membershipLevel">
