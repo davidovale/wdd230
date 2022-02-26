@@ -1,0 +1,179 @@
+/* 35rem is also 560px when basefont is 16px */
+
+
+@media only screen and (max-width: 32.5rem){
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+    main{
+        display: block;
+    }
+
+    .content{
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+    .event, .weather, .join, .middle-main, .news-release{
+        height: 10em;
+    }
+
+    .news-release{
+        font-size: 0.9em;
+        padding: 0px 0px 30px 0px;
+    }
+    .middle-main{
+        order: -1;
+        
+    }
+
+
+    h1{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .header-date{
+        font-size: 0.9em;
+    }
+
+    #img-top{
+        width: 30%;
+    }
+
+    .back-footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        
+        
+    }   
+
+    h2{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .content-footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        padding: 0px;
+        margin: 10px;
+    }
+
+    .test-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .main-nav-footer{
+        padding: 0px;
+    }
+    
+    .test-flex img{
+        width: 30%;
+        
+    }
+
+    footer{
+        display: block;
+    }
+
+    .container-footer img{
+        display: flex;
+        justify-content: space-around;
+        width: 50px;
+        padding: 0px;
+    }
+
+    .img-facebook, .img-linkedin {
+        width: 20px;
+    }
+
+    .weather img{
+        max-width: 20%;
+        padding: 1em;
+        float: left;
+        
+    }
+
+    .mypicture{
+        display: block;
+        margin: auto;
+        max-width: 80%;
+      }
+
+    .herodivlabel{
+        width: 100%;
+    }
+
+    .herodivlabel h3{
+        font-size: 0.8em;
+        margin: 0px;
+        padding: 0px;
+    }
+    .herodivlabel h3::after{
+        content: "Small Size";
+    }
+
+    .content-images-1, .content-images-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-images-1 img, .content-images-2 img{
+        
+        width: 60%;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    .content-images-1 span, .content-images-2 span{
+        font-size: 0.8em;
+    }
+
+    .img-5:hover, .img-6:hover, .img-7:hover, .img-8:hover {box-shadow: 0 0 0px #333;}
+    .img-1:hover {border-radius: 0px;}
+    .img-2, .img-4 {
+        -webkit-filter: sepia(0%);
+        filter: sepia(0%);
+        -webkit-transition: none;
+        transition: none;
+    }
+    .img-3 {
+        -webkit-transition: none;
+        transition: none;
+      }
+
+      .img-3:hover,
+      .img-3.hover {
+        -webkit-transform: none;
+        transform: none;
+      }
+
+    
+    .img-8 {
+        -webkit-transition: none;
+        transition: none;
+      }
+
+    .img-9 {
+        -webkit-filter: none;
+        filter: none;
+        -webkit-transition: none;
+        transition: none;   
+    }
+    .img-9:hover{
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+}
