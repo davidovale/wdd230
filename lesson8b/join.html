@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Join Page</title>
+    <meta charset="utf-8">
+    <meta name="description" content="In this assignment, you will complete the Join page on the chamber of commerce site. 
+    The purpose of this page is for the prospective user to apply to join the chamber of commerce through a membership 
+    application form. The following instructions provide the specific form input and interaction requirements.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+  </head>
+    <body onload="date()">
+        <header>
+          <div class="content-header">
+              <div class="img-name">
+                  <img src="images/newlogo.webp" alt="Londrina Society Logo" class="logo-header" id="img-top">
+                  <h1>Londrina Society</h1>
+              </div>
+              <div class="images-header">
+                  <a target="blank" href="https://www.facebook.com/">
+                      <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                  </a>            
+                  <a target="blank" href="https://linkedin.com/">
+                      <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                  </a>
+              </div>
+          </div>
+          <div class="header-date">
+              <p id="date"></p>
+          </div>
+              <!-- NAVIGATION HERE -->
+              <nav>
+                  <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                  <ul id="primaryNav">
+                      <li><a href="#" class="active">Home</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#">Location</a></li>
+                      <li><a href="#">Photos</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Blog</a></li>    
+                  </ul>
+              </nav>
+        </header>
+        <main>
+            <div class="number-visits" style="display: none;">
+              <p><span class="label-time">Number of Visits: </span>
+                  <span class="visits"></span></p>
+              <p>
+                <span class="last">
+                  Last visit:
+                </span>
+                <span class="last-day">
+
+                </span>
+              </p>
+              <p>
+                <span class="lastModification">
+
+                </span>
+              </p>
+              <p>
+                <span class="lastVisitUser">Last visit since last update: </span>
+                <span class="lastModUser">
+                
+                </span>
+              </p>
+            </div>
+            
+            <div class="divform">
+                <h1>Join Page</h1>
+                <form name="myForm" method="get">
+                    <section name="personalInformation" class="personalInformation">
+                        <div>
+                            <h2>Personal Information</h2>
+                            <label for="firstName" name="lblname">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required >
+                        </div>
+                        <div>
+                            <label for="lastName" name="lblLastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="lastName" required>
+                        </div>
+                    </section>
+                    <section name="contactInformation" class="contactInformation">
+                        <div>
+                            <h2>Contact Information</h2>
+                            <label for="txtEmail">Email</label>
+                            <input type="email" id="txtEmail" name="txtEmail" placeholder="example@gmail.com" required>
+                        </div>
+                        <div>  
+                            <label for="tel">Tel</label>
+                            <input type="tel" id="tel" name="tel">
+                        </div>
+                    </section>
+                    <section name="businessInformation" class="businessInformation">
+                        <div>
+                            <h2>Business Information</h2>
+                            <label for="txtBusPosition">Business Position</label>
+                            <input type="text" id="txtBusPosition" name="txtBusPosition" alt="Business Position" onkeyup="inputBusPosition()">
+                        </div>
+                        <div>
+                            <label for="txtBusName">Business Name</label>
+                            <input type="text" id="txtBusName" name="txtBusName" alt="Business Name" required">
+                        </div>
+                        <div>
+                            <label for="textarea">Business Description</label>
+                            <textarea id="textarea" name="textarea" cols="22" rows="5"></textarea>
+                        </div>
+                    </section>
+                    <section name="membershipLevel" class="membershipLevel">
+                        <div class="radioLevel">
+                            <h2>Membership Level</h2>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="radioLevel" name="radioLevel" value="np">
+                                        <label>NP Membership</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radioLevel" value="bronze">
+                                        <label>Bronze Membership</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radioLevel" value="Silver">
+                                        <label>Silver Membership</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radioLevel" value="Gold">
+                                        <label>Gold Membership</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <input type="hidden" id="dateTime" name="dateTime">
+                    <div class="submit">
+                        <input type="submit" value="Validate My Form">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+          <div class="background-footer">
+            <div class="back-footer">
+                <div class="test-flex">
+                    <img src="images/newlogo.webp" alt="Londrina Society Logo" class="logo">
+                    
+                    <nav class="main-nav-footer">
+                        <h2>Londrina Society</h2>
+                        <label class="text-footer">1246 Tiradentes Avenue</label>
+                        <label class="text-footer">Londrina-PR, Brazil</label>
+                    </nav>
+                </div>
+                <div class="location-footer">
+                    <p>londrina_society@gmail.com</p>
+                    <p>(+55) 433024-8714</p>
+                    
+                    📍<a target="blank" href="https://goo.gl/maps/or3ENev6iGPcJnYh9">Location Map</a>
+                </div>
+            </div> 
+                <div class="content-footer">
+                    <p>
+                        <label id="copy"></label> 
+                        <label id="year"> </label> 
+                        <label id="londrina">&nbsp;Londrina Society </label><label class="bar">|</label> 
+                        <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label><label class="bar">|</label> 
+                        <label id="wdd">&nbsp;WDD 230 Project </label><label class="bar">|</label> &nbsp;
+                        <label id="date-footer"></label>
+                    </p>
+                </div>
+            </div>
+      </footer>
+      <script src="js/script.js"></script>
+    </body>
+</html>

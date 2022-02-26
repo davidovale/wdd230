@@ -1,7 +1,9 @@
+
 function date(){
     const datefieldUK = document.querySelector("#date");
     const now = new Date();
     const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+
     if (now.getDay() == 1 || now.getDay() == 2){
         datefieldUK.innerHTML = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
     }else{
@@ -11,6 +13,15 @@ function date(){
     document.querySelector("#date-footer").innerHTML = "Last Modification: " + document.lastModified;
     document.querySelector("#copy").innerHTML = "&copy;"
     document.querySelector('#year').innerHTML = new Date(Date.now()).getFullYear();
+
+    const hour    = String(now.getHours()).padStart(2, '0');          // 0-23
+    const min     = String(now.getMinutes()).padStart(2, '0');         // 0-59
+    const sec     = String(now.getSeconds()).padStart(2, '0');         // 0-59
+    const date_current = currentDate();
+    const str_hora = hour + ':' + min + ':' + sec;
+    const datetime = date_current + " "+str_hora;
+    document.querySelector("#dateTime").value = datetime;
+
 }
 
 const images = document.querySelectorAll("[data-src]");
@@ -98,6 +109,7 @@ function currentDate(){
     return dataAtual;
 }
 
+
 function calculateDate(today, last){
     let d1 = new Date(today);
     let d2 = new Date(last);
@@ -119,3 +131,9 @@ function Modification(){
     //document.querySelector('#year').innerHTML = new Date(Date.now()).getFullYear();
   }
   
+  function inputBusPosition(){
+    let input = document.getElementById("txtBusPosition").value;
+    const regexpWords = /\b\w+\b/g;
+    input = input.match(regexpWords);
+  }
+
