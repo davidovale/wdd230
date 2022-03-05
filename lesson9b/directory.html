@@ -1,0 +1,88 @@
+<!-- https://run.mocky.io/v3/a7dbf153-fa48-453b-b796-c2ab74e8810f -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Business Directory Page</title>
+    <meta charset="utf-8">
+    <meta name="description" content="In this week's application assignment, you will work on the business Directory 
+    page for the chamber project. This page provides and information listing of the businesses that belong to the 
+    chamber.  The content will appear as informational 'cards' that list contact information with an image in one 
+    of h, listing pieces of information and an image or logo. The activity that you completed in the Prepare module 
+    of this week will help you complete this page. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+  </head>
+    <body>
+        <header>
+          <div class="content-header">
+              <div class="img-name">
+                  <img src="images/newlogo.webp" alt="Londrina Society Logo" class="logo-header" id="img-top">
+                  <h1>Londrina Society</h1>
+              </div>
+              <div class="images-header">
+                  <a target="blank" href="https://www.facebook.com/">
+                      <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                  </a>            
+                  <a target="blank" href="https://linkedin.com/">
+                      <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                  </a>
+              </div>
+          </div>
+          <div class="header-date">
+              <p id="date"></p>
+          </div>
+              <!-- NAVIGATION HERE -->
+              <nav>
+                  <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                  <ul id="primaryNav">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#" class="active">Business Directory</a></li>
+                      <li><a href="#">Photos</a></li>
+                      <li><a href="#">Join</a></li>
+                      <li><a href="#">Blog</a></li>    
+                  </ul>
+              </nav>
+        </header>
+        <main>
+            <div class="companies"></div>
+        </main>
+        <footer>
+          <div class="background-footer">
+            <div class="back-footer">
+                <div class="test-flex">
+                    <img src="images/newlogo.webp" alt="Londrina Society Logo" class="logo">
+                    
+                    <nav class="main-nav-footer">
+                        <h2>Londrina Society</h2>
+                        <label class="text-footer">1246 Tiradentes Avenue</label>
+                        <label class="text-footer">Londrina-PR, Brazil</label>
+                    </nav>
+                </div>
+                <div class="location-footer">
+                    <p>londrina_society@gmail.com</p>
+                    <p>(+55) 433024-8714</p>
+                    
+                    📍<a target="blank" href="https://goo.gl/maps/or3ENev6iGPcJnYh9">Location Map</a>
+                </div>
+            </div> 
+                <div class="content-footer">
+                    <p>
+                        <label id="copy"></label> 
+                        <label id="year"> </label> 
+                        <label id="londrina">&nbsp;Londrina Society </label><label class="bar">|</label> 
+                        <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label><label class="bar">|</label> 
+                        <label id="wdd">&nbsp;WDD 230 Project </label><label class="bar">|</label> &nbsp;
+                        <label id="date-footer"></label>
+                    </p>
+                </div>
+            </div>
+      </footer>
+      <script src="js/script.js"></script>
+    </body>
+</html>
