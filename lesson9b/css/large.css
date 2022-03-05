@@ -217,7 +217,6 @@
 /*  WEEK 9 */
 
 section {
-    border: 1px solid blue;
     background-color: #eeeeee;
     margin: 20px 0px 0px 0px;
     padding: 20px;
@@ -228,8 +227,3 @@ section img{
     max-width: 60%;
 }
 
-.companies{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}

@@ -83,6 +83,20 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows:  1fr 300px;
     }
+
+    .companies{
+        border: 1px solid #cccccc;
+        padding: 20px;
+        margin: 20px 0px 20px 0px;
+        box-shadow: 2px 2px 2px 2px #999;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section h3, section a{
+        font-size: 0.8em;
+    }
+
     
     .content-images-1 h2{
         grid-row: 1;

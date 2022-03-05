@@ -269,7 +269,7 @@ h2{
 
 section a {
     text-decoration: underline;
-    color: black;
+    color: #000099;
     font-size: 1.2em;
     
 }
@@ -533,3 +533,10 @@ nav ul.open {
 #hamburguerBtn.open span:nth-child(2) {display: block;}
 /* END MENU */
 
+.companies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+}
