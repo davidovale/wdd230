@@ -22,7 +22,7 @@ let choice = "";
     logo.setAttribute('src',company.imageurl);
     logo.setAttribute('alt', company.name);
     logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('title', company.name);
+    //logo.setAttribute('title', company.name);
 
     site.setAttribute('href', company.site);
     site.setAttribute('target', 'blank');
@@ -70,3 +70,28 @@ function view(option){
   }
 }
   
+
+function date(){
+  const datefieldUK = document.querySelector("#date");
+  const now = new Date();
+  const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+
+  if (now.getDay() == 1 || now.getDay() == 2){
+      datefieldUK.innerHTML = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+  }else{
+      datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+  }
+  
+  document.querySelector("#date-footer").innerHTML = "Last Modification: " + document.lastModified;
+  document.querySelector("#copy").innerHTML = "&copy;"
+  document.querySelector('#year').innerHTML = new Date(Date.now()).getFullYear();
+
+  const hour    = String(now.getHours()).padStart(2, '0');          // 0-23
+  const min     = String(now.getMinutes()).padStart(2, '0');         // 0-59
+  const sec     = String(now.getSeconds()).padStart(2, '0');         // 0-59
+  const date_current = currentDate();
+  const str_hora = hour + ':' + min + ':' + sec;
+  const datetime = date_current + " "+str_hora;
+  document.querySelector("#dateTime").value = datetime;
+
+}
