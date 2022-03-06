@@ -540,3 +540,20 @@ nav ul.open {
     padding: 20px;
     margin: 20px 0px 20px 0px;
 }
+
+.buttons{
+    text-align: center;
+    margin: 50px 10px 0px 10px;
+}
+
+#large_btn, #small_btn{
+    width: 30px;
+    height: 30px;
+    color: #030358;
+    padding: 0px 2px;
+}
+
+.companies p{
+    font-weight: bold;
+}
+

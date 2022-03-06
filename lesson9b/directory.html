@@ -50,7 +50,12 @@
               </nav>
         </header>
         <main>
-            <div class="companies"></div>
+            <div class="buttons">  
+                <input type="image" id="large_btn" value="large" src="images/btn_large.jpg" onclick="view(this.value)">
+                <input type="image" id="small_btn" value="small" src="images/btn_small.jpg" onclick="view(this.value)">
+            </div>
+            <div id="companies" class="companies"></div>
+            <div id="companiesList" class="companiesList"></div>
         </main>
         <footer>
           <div class="background-footer">
