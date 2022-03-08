@@ -1,0 +1,36 @@
+/* 64rem is also 1028px when basefont is 16px */
+
+@media only screen and (min-width: 60rem){
+
+    nav button {display: none;}
+
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+    }
+    
+    nav ul li a{
+        border: none;
+    }
+
+    .middle-main h2{
+        font-size: 1.2em;
+    }
+
+    .middle-main h2::after{
+        content: " - Large Size";
+        color: red;
+        font-size: 0.8em;
+    }
+
+    
+    
+    
+}
+/* end larg  
+
+nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+*/
