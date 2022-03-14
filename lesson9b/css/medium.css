@@ -88,8 +88,34 @@
         padding: 20px;
         margin: 20px 0px 20px 0px;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         max-width: 90%;
+    }
+
+    .companies section{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .companies section img{
+        max-width: 60%;
+        margin: 5px;
+    }
+
+    .companies section p, .companies section a{
+        font-size: 0.6em;
+    }
+
+    .companiesList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .companiesList section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
     }
 
     .companiesList p:nth-child(1){

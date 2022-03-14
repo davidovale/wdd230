@@ -188,6 +188,11 @@
         grid-template-columns: 1fr;
     }
 
+    .companiesList{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 
     .companiesList p:nth-child(1){
         font-weight: bold;
