@@ -1,0 +1,145 @@
+@media only screen and (max-width: 32.5rem){
+    main{
+        display: block;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+
+    .content{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .event, .weather, .join, .middle-main{
+        height: 10em;
+    }
+    .middle-main{
+        order: -1;
+        
+    }
+    .main-nav-footer h2{
+        font-size: 1.2rem;
+        padding: 0px;
+    }
+    .text-footer, .location-footer p, a{
+        font-size: 1rem;
+    }
+
+    .event p, .join p{
+        font-size: 0.9em;
+    }
+    .weather p, .news-release p, .spotlight-1 p, .spotlight-2 p, .spotlight-3 p, .spotlight-1 a, .spotlight-2 a, .spotlight-3 a{
+        font-size: 0.8em;
+    }
+    .event h2, .weather h2, .news-release h2, .spotlight div h2{
+        font-size: 1em;
+    }
+
+    .spotlight-1 img, .spotlight-2 img, .spotlight-3 img {
+        width: 5em;
+    }
+
+    #condition{
+        font-size: 1em;
+    }
+
+    .join p, .news-release p{
+        font-size: 0.8em;
+    }
+
+    .middle-main h2::after{
+        content: " - Medium Size";
+        font-size: 0.8em;
+        color: red;
+    }
+
+    .middle-main img{
+        max-width: 40%;
+        padding: 30px;
+    }
+
+    .middle-main{
+        height: 350px;
+    }
+
+    .middle-main h2{
+        padding: 0.2em;
+        text-align: center;
+        background-color: var(--background-header);
+        border-radius: 10px;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.1em;
+    }
+
+    .middle-main img{
+        padding: 50px;
+    }
+
+    .middle-main a {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        
+      }
+
+      .content-images-1, .content-images-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-images-1 img, .content-images-2 img{
+        
+        width: 60%;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    .content-images-1 span, .content-images-2 span{
+        font-size: 0.8em;
+    }
+
+    .img-5:hover, .img-6:hover, .img-7:hover, .img-8:hover {box-shadow: 0 0 0px #333;}
+    .img-1:hover {border-radius: 0px;}
+    .img-2, .img-4 {
+        -webkit-filter: sepia(0%);
+        filter: sepia(0%);
+        -webkit-transition: none;
+        transition: none;
+    }
+    .img-3 {
+        -webkit-transition: none;
+        transition: none;
+      }
+
+      .img-3:hover,
+      .img-3.hover {
+        -webkit-transform: none;
+        transform: none;
+      }
+
+    
+    .img-8 {
+        -webkit-transition: none;
+        transition: none;
+      }
+
+    .img-9 {
+        -webkit-filter: none;
+        filter: none;
+        -webkit-transition: none;
+        transition: none;   
+    }
+    .img-9:hover{
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+}

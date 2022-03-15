@@ -4,84 +4,108 @@
 			"address": "R. Sen. Souza Naves, 558 - 601 - Centro, Londrina - PR, 86010-160",
 			"phone": "(43) 3028-6888",
 			"site": "https://www.alterdata.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/alterdata.jpg?v=1646381529503"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/alterdata.jpg?v=1646381529503",
+			"membership": "silver",
+			"prhase": "Necessity is the mother of innovation."
 		},
 		{
 			"name": "Gelt Tecnologia e Sistemas",
 			"address": "R. Henrique Dias, 366 - Vila Fujita, Londrina - PR, 86015-810",
 			"phone": "(43) 3375-3130",
 			"site": "https://gelt.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/gelt.jpg?v=1646473768084"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/gelt.jpg?v=1646473768084",
+			"membership": "np",
+			"prhase": "The future is innovation."
 		},
 		{
 			"name": "Altatech Soluções em Tecnologia Ltda",
 			"address": "Av. Juscelino Kubitscheck, 1905 - Centro, Londrina - PR, 86010-540",
 			"phone": "(43) 2105-1002",
 			"site": "https://altatech.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/altatech.jpg?v=1646381526617"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/altatech.jpg?v=1646381526617",
+			"membership": "np",
+			"prhase": "Any sufficiently advanced technology is indistinguishable from magic."
 		},
 		{
 			"name": "SS Tecnologia Ltda",
 			"address": "R. Pernambuco, 390 - 405 - Centro, Londrina - PR, 86020-913",
 			"phone": "(43) 3025-2464",
 			"site": "https://www.sstecnologia.net.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/sstecnologia.jpg?v=1646381626699"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/sstecnologia.jpg?v=1646381626699",
+			"membership": "np",
+			"prhase": "Today's science is tomorrow's technology."
 		},
 		{
 			"name": "V3 Tecnologia",
 			"address": "R. Ernâni Lacerda de Athayde, 350 - S703 - Gleba Fazenda",
 			"phone": "(11) 4130-7480",
 			"site": "https://v3.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/v3tecnologia.jpg?v=1646381633878"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/v3tecnologia.jpg?v=1646381633878",
+			"membership": "bronze",
+			"prhase": "Living is innovating life day after day."
 		},
 		{
 			"name": "TI Solution Tecnologia",
 			"address": "R. Santa Catarina, 50 - 2402 - Centro, Londrina - PR, 86010-470",
 			"phone": "(43) 3029-9666",
 			"site": "http://www.tisolution.com/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/tisolution.jpg?v=1646381630106"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/tisolution.jpg?v=1646381630106",
+			"membership": "gold",
+			"prhase": "Creativity is thinking new things. Innovation is doing new things."
 		},
 		{
 			"name": "Polaris Tecnologia - Redes, Servidores e Suporte Técnico",
 			"address": "Av. Higienópolis, 1601 - SL 1003 - Centro, Londrina - PR, 86015-010",
 			"phone": "(43) 3017-4932",
 			"site": "https://polaristecnologia.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/polaris.jpg?v=1646381624088"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/polaris.jpg?v=1646381624088",
+			"membership": "gold",
+			"prhase": "It's fun to do the impossible, because there the competition is less."
 		},
 		{
 			"name": "Integra Tecnologia",
 			"address": "Av. Ayrton Senna da Silva, 500 - sala 2404 - Gleba Fazenda Palhano, Londrina - PR, 86050-460",
 			"phone": "(43) 3343-3315",
 			"site": "http://www.integracenter.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/integra.jpg?v=1646381535672"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/integra.jpg?v=1646381535672",
+			"membership": "silver",
+			"prhase": "Technology moves the world."
 		},
 		{
 			"name": "M3N Tecnologia",
 			"address": "R. Brasil, 1518 - Centro, Londrina - PR, 86010-200",
 			"phone": "(43) 4141-2015",
 			"site": "http://www.m3ntecnologia.com/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/m3ntecnologia.jpg?v=1646381542096"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/m3ntecnologia.jpg?v=1646381542096",
+			"membership": "silver",
+			"prhase": "Communication is not just talking, seeing or hearing, it is making people understand!"
 		},
 		{
 			"name": "Onix Seven - Tecnologia em Gestão Pública",
 			"address": "Rua Oswaldo Nunes, 219 - Maria Lúcia, Londrina - PR, 86072-300",
 			"phone": "(43) 3338-5497",
 			"site": "https://www.onixseven.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/onixseven.jpg?v=1646381557576"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/onixseven.jpg?v=1646381557576",
+			"membership": "bronze",
+			"prhase": "The art of innovating."
 		},
 		{
 			"name": "ITUM Tecnologia",
 			"address": "Av. Maringá, 813 - Vitoria, Londrina - PR, 86060-000",
 			"phone": "(43) 3028-0970",
 			"site": "https://www.itum.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/itumtecnologia.jpg?v=1646473794393"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/itumtecnologia.jpg?v=1646473794393",
+			"membership": "bronze",
+			"prhase": "Programming tomorrow's technology today."
 		},
 		{
 			"name": "Mystra Tecnologia",
 			"address": "R. Raja Gabaglia, 334 - Jardim Quebec, Londrina - PR, 86060-190",
 			"phone": "(43) 3142-1819",
 			"site": "https://www.mystra.com.br/",
-			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/mystra.jpg?v=1646381550512"
+			"imageurl": "https://cdn.glitch.global/b50831a2-5b43-4e86-92a9-d6dbf7899abd/mystra.jpg?v=1646381550512",
+			"membership": "np",
+			"prhase": "Innovation is the loop of life."
 		}
 	]
 }
