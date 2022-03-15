@@ -11,7 +11,6 @@
     <link type="text/css" rel="stylesheet" href="css/base.css">
     <link type="text/css" rel="stylesheet" href="css/medium.css">
     <link type="text/css" rel="stylesheet" href="css/small.css">
-    
     <link type="text/css" rel="stylesheet" href="css/large.css">
   </head>
     <body onload="date()">
@@ -37,12 +36,11 @@
               <nav>
                   <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
                   <ul id="primaryNav">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Products</a></li>
-                      <li><a href="#">Location</a></li>
-                      <li><a href="#">Photos</a></li>
-                      <li><a href="join.html" class="active">Join</a></li>
-                      <li><a href="#">Blog</a></li>    
+                    <li><a href="../lesson11/index.html">Home</a></li>
+                    <li><a href="../lesson11/discover.html">Discover</a></li>
+                    <li class="active"><a href="join.html">Join Us</a></li>
+                    <li><a href="../lesson9b/directory.html">Directory</a></li>
+                    <li><a href="#">Contact Us</a></li>  
                   </ul>
               </nav>
         </header>
@@ -103,7 +101,7 @@
                             <input type="text" id="txtBusPosition" name="txtBusPosition" 
                             required placeholder="Founder/Owner" pattern="^[-\s\da-zA-Z]{7,}"
                             oninvalid="this.setCustomValidity('☝🏼 Please enter only alpha characters.')" 
-                            >¨
+                            >
                         </div>
                         <div>
                             <label for="txtBusName">Business Name <span class="required">*</span></label>
@@ -118,30 +116,38 @@
                         <fieldset>
                             <legend>Membership Levels</legend>
                             <div class="radioLevel">
-                                <h2>Membership Level</h2>
+                                <h2 class="h2membership">Membership Level</h2>
                                 <table>
                                     <tr>
                                         <td>
                                             <label><input type="radio" id="radioLevel" name="radioLevel" value="np">
                                             NP Membership</label>
+                                            <label class="lbl-description"> - non profit organizations have no 
+                                                fees and can be showed on our directory page</label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <label><input type="radio" name="radioLevel" value="bronze">
                                             Bronze Membership</label>
+                                            <label class="lbl-description"> - ( $395 / year) It's listed on the Directory page, 
+                                                1 annual training, 5% discount on events</label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <label><input type="radio" name="radioLevel" value="Silver">
                                             Silver Membership</label>
+                                            <label class="lbl-description"> - ( $795 / year) Previous benefits, 2 semester trainings, 
+                                                10% discount on events, advertisements</label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <label><input type="radio" name="radioLevel" value="Gold">
                                             Gold Membership</label>
+                                            <label class="lbl-description"> - ( $1395 / year) Previous benefits, 2 bimonthly trainings, 
+                                                20% discount on events, advertisements</label>
                                         </td>
                                     </tr>
                                 </table>

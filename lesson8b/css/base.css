@@ -118,6 +118,11 @@ html{
     margin: 2px;
 }
 
+.lbl-description{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
 .membershipLevel input{
     margin: 10px;
 }

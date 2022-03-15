@@ -181,4 +181,21 @@
         padding: 1em;
     }
 
+    .personalInformation input, .contactInformation input, .businessInformation input{
+        width: 100%;
+    }
+
+    #textarea{
+        width: 100%;
+    }
+
+    .h2membership{
+        font-size: 1em;
+    }
+
+    .lbl-description{
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
 }
