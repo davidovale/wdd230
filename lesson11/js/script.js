@@ -1,6 +1,4 @@
-const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=3458449&appid=70d99af3e605450038d66d76ee240672';
-const divweather = document.querySelector('.weather');
-let windchill = "";
+
 
 
 const images = document.querySelectorAll("[data-src]");

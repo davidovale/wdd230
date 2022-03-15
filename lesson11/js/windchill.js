@@ -1,3 +1,6 @@
+const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=3458449&appid=70d99af3e605450038d66d76ee240672';
+const divweather = document.querySelector('.weather');
+let windchill = "";
 
 function calcWindChill(t, s){
   if (t <= 50 && s > 3) {
@@ -50,7 +53,7 @@ let choice = "";
     condition.textContent = capitalize(varWeather.weather[0].description);
     condition.setAttribute('id', 'condition');
     spanSpeed.setAttribute('id', 'speed');
-    spanSpeed.textContent = `${varWeather.wind['speed']} Km/h`;
+    spanSpeed.textContent = `${varWeather.wind['speed']} mph`;
     spanWindChill.setAttribute('id', 'wind');
     condition.setAttribute('class', 'negrito');
     city.textContent = `${varWeather.name} (${((varWeather['main'].temp - 273.15) * (9/5) +32).toFixed(1)} ºF)`;
