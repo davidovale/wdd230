@@ -2,6 +2,10 @@
 
 @media only screen and (min-width: 60rem){
 
+    main {
+        border: 1px solid red;
+    }
+
     nav button {display: none;}
 
     nav ul#primaryNav {

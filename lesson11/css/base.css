@@ -246,9 +246,7 @@ position: relative;
     left: 40px;
 }
 
-.middle-main img{
-    padding: 30px;
-}
+
   
   .middle-main a {
     position: absolute;
@@ -258,9 +256,8 @@ position: relative;
   }
 
 .mypicture img {
-    display: block;
-    margin: auto;
-    max-width: 90%;
+
+    max-width: 100%;
     border-radius: 10px;
   }
 
@@ -298,19 +295,17 @@ position: relative;
     padding: 1em;
 }
 
-.spotlight-1, .spotlight-2, .spotlight-3{
+.spotlight-1{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.spotlight-1 img, .spotlight-2 img{
-    width: 20%;
+.spotlight-1 img, .spotlight-2 img, .spotlight-3 img{
+    width: 60%;
+    padding: 10px;
 }
 
-.spotlight-3 img{
-    width: 25%;
-}
 
 .spotlight-1 p, .spotlight-2 p, .spotlight-3 p{
     font-style: italic;

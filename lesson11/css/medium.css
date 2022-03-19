@@ -9,10 +9,11 @@
 
     main{
         display: block;
+        border: 1px solid green;
     }
 
     .content{
-        max-width: 90%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -21,7 +22,7 @@
     }
     .middle-main{
         order: -1;
-        
+        overflow: hidden;
     }
 
 
@@ -115,17 +116,21 @@
     }
 
 .middle-main h2{
-    font-size: 0.7em;
+    font-size: 1em;
+    top: 5px;
+    left: 10px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .middle-main a{
-    font-size: 0.6em;
+    font-size: 1em;
 }
 
     .middle-main h2::after{
-        content: " - Small Size";
+        content: " - Medium Size";
         color: red;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .middle-main{
@@ -148,9 +153,8 @@
     }
 
     .mypicture img {
-        display: block;
-        margin: auto;
-        max-width: 50%;
+        max-width: 100%;
+        
       }
     
     .herodivlabel{

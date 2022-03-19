@@ -1,6 +1,7 @@
 @media only screen and (max-width: 32.5rem){
     main{
         display: block;
+        border: 1px solid blue;
     }
 
     nav {
@@ -51,18 +52,19 @@
     }
 
     .middle-main h2::after{
-        content: " - Medium Size";
+        content: " - Small Size";
         font-size: 0.8em;
         color: red;
     }
 
     .middle-main img{
-        max-width: 40%;
-        padding: 30px;
+        max-width: 100%;
+        padding: 80px 0px 0px 0px;
+        height: 350px;
     }
 
     .middle-main{
-        height: 350px;
+        height: 400px;
     }
 
     .middle-main h2{
@@ -77,10 +79,6 @@
         top: 10px;
         left: 10px;
         font-size: 1.1em;
-    }
-
-    .middle-main img{
-        padding: 50px;
     }
 
     .middle-main a {
