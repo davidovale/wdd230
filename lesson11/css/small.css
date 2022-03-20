@@ -1,7 +1,6 @@
 @media only screen and (max-width: 32.5rem){
     main{
         display: block;
-        border: 1px solid blue;
     }
 
     nav {
@@ -21,6 +20,19 @@
         order: -1;
         
     }
+
+    .news-release{
+        order: 0;
+    }
+
+    .spotlight{
+        order: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5px;
+        margin: 5px;
+    }
+
     .main-nav-footer h2{
         font-size: 1.2rem;
         padding: 0px;
@@ -138,6 +150,23 @@
     .img-9:hover{
         -webkit-filter: grayscale(0);
         filter: grayscale(0);
+    }
+
+    .personalInformation input, .contactInformation input, #txtBusName{
+        width: 100%;
+    }
+
+    #textarea{
+        width: 100%;
+    }
+
+    .h2membership{
+        font-size: 1em;
+    }
+
+    .lbl-description{
+        font-size: 0.8em;
+        font-weight: bold;
     }
 
 }

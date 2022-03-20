@@ -469,3 +469,20 @@ nav ul.open {
 #hamburguerBtn.open span:nth-child(2) {display: block;}
 /* END MENU */
 
+/* CONTACT PAGE */
+
+#txtBusPosition,
+#txtBusPosition:focus,
+#txtBusPosition:valid {
+	background-color: #bed;
+}
+
+#txtBusPosition:invalid {
+	background-color: lightcoral;
+	border: 1px solid red;
+}
+
+#txtBusPosition:valid {
+	background-color: #bed;
+	color: #000;
+}

@@ -1,0 +1,107 @@
+/* Form */
+
+.personalInformation div, .contactInformation div, .businessInformation div{
+    margin: 2px;
+}
+
+.personalInformation div label, .contactInformation div label, .businessInformation div label{
+    display: block;
+}
+
+.personalInformation div input, .contactInformation div input, .businessInformation div input{
+    margin: 2px;
+}
+
+.lbl-description{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.membershipLevel input{
+    margin: 10px;
+}
+
+.radioLevel{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin: 20px 0px 10px 0px;
+}
+
+.submit{
+    margin: 20px;
+}
+
+.required{
+    color: #790013;
+    font-weight: bold;
+}
+
+.personalInformation input, .contactInformation input, #txtBusName{
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 0px 0px 0px 15px;
+}
+
+.textarea{
+    border-radius: 10px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    padding: 0px 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+.divform{
+    padding: 10px;
+    max-width: 90%;
+    display: block;
+}
+
+.map{
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.information{
+    text-align: center;
+}
+
+/* End Form */
+
+@media only screen and (max-width: 959px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .information h2{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 32.5rem){
+    .personalInformation input, .contactInformation input, #txtBusName{
+        width: 90%;
+    }
+
+    #textarea{
+        width: 90%;
+    }
+
+    .h2membership{
+        font-size: 1em;
+    }
+
+    .lbl-description{
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+}

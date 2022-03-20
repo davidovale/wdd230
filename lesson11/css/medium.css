@@ -20,11 +20,27 @@
     .event, .weather, .join, .middle-main{
         height: 10em;
     }
+
+    .businessInformation{
+        max-width: 100%;
+    }
+
     .middle-main{
         order: -1;
         overflow: hidden;
     }
 
+    .news-release{
+        order: -1;
+    }
+
+    .spotlight{
+        order: -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
+        
+    }
 
     h1{
         font-size: 1.2em;
@@ -150,6 +166,10 @@
 
     .spotlight-1 img, .spotlight-2 img, .spotlight-3 img {
         width: 5em;
+    }
+
+    .spotlight a{
+        font-size: 0.9em;
     }
 
     .mypicture img {
