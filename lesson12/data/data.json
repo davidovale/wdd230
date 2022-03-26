@@ -1,0 +1,63 @@
+{
+	"temples": [{
+			"id": "01",
+			"name": "Rio de Janeiro Brazil Temple",
+			"address": "Avenida Das Américas, Nº 9005 Barra Da Tijuca - Rio De Janeiro-RJ, Brazil",
+			"phone": "(55) 21-3028-6888",
+			"email": "riodejaneiro_temple@ldschurch.org",
+			"services":["No clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+			"baptism": ["still waiting for the dedication of the temple"],
+			"endowment": ["still waiting for the dedication of the temple"],
+			"sealment": ["still waiting for the dedication of the temple"],
+			"history": "The Rio de Janeiro Temple is a religious temple owned by The Church of Jesus Christ of Latter-day Saints. Its construction was announced on April 6, 2013.[1] The groundbreaking ceremony took place on March 4, 2017.[2] The architecture is based on the art deco style present in Rio de Janeiro, a city considered the 'Latin American capital' of the style, with more than 300 buildings in the aesthetics. The temple tower even has reminiscences of the Central Station tower in Brazil.",
+			"imageurl": "https://assets.ldscdn.org/67/8c/678c7c8c557a71314eefc342a9a7a153ef2cfaef/rio_de_janeiro_brazil_temple.jpeg",
+			"closure": "10:00pm",
+			"new": "yes"
+		},
+		{
+			"id": "02",
+			"name": "Campinas Brazil Temple",
+			"address": "Rua James Esdras Faust, 400 Notre Dame - Campinas-SP, Brazil",
+			"phone": "(55) 19-2102-5800",
+			"email": "campinas_temple@ldschurch.org",
+			"services":["Clothing rental available", "Cafeteria available", "Patron housing available", "Distribution center nearby"],
+			"baptism": ["09:15 am", "11:15 am", "02:15 pm", "04:15pm"],
+			"endowment": ["09:00 am", "11:10 am", "01:50 pm", "03:50pm"],
+			"sealment": ["10:00 am", "11:30 am", "02:30 pm", "04:20pm"],
+			"history": "Plans to build the Campinas Temple were announced on April 3, 1997. This was the fourth temple to be built in Brazil. The groundbreaking ceremony and ground dedication were held on May 1, 1998. The ceremony was presided over by James E. Faust, a member of the First Presidency who served as a Mormon missionary in Brazil in the 1940s.",
+			"imageurl": "https://assets.ldscdn.org/33/cb/33cb73d045a401cfc3d837910eac29ab672ae74c/campinas_brazil_temple_lds.jpeg",
+			"closure": "10:00pm",
+			"new": "no"
+		},
+		{
+			"id": "03",
+			"name": "Curitiba Brazil Temple",
+			"address": "Rua Deputado Heitor Alencar Furtado, 3641 Mossunguê - Curitiba-PR, Brazil,",
+			"phone": "(55) 41-3204-6650",
+			"email": "curitiba_temple@ldschurch.org",
+			"services":["No clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+			"baptism": ["09:00 am", "11:00 am", "02:00 pm", "04:00pm"],
+			"endowment": ["09:10 am", "11:30 am", "02:20 pm", "04:50pm"],
+			"sealment": ["09:00 am", "10:30 am", "01:30 pm", "03:20pm"],
+			"history": "Construction of the Curitiba Temple was announced on August 23, 2002. The groundbreaking ceremony took place on March 10, 2005 and was performed by Russell Marion Nelson of the Church's Quorum of the Twelve Apostles. The statue of the angel Moroni, present in almost all Mormon temples, was placed on the tower on January 11, 2008, in a ceremony for 1200 people, presided over by Russell M. Nelson. The public visitation period was between May 10 and 24, 2008. The dedication took place on June 1, 2008, preceded by a Celebration Night on May 31 at the Joaquim Américo Stadium (Arena da Baixada).",
+			"imageurl": "https://assets.ldscdn.org/67/8c/678c7c8c557a71314eefc342a9a7a153ef2cfaef/rio_de_janeiro_brazil_temple.jpeg",
+			"closure": "10:00pm",
+			"new": "no"
+		},
+		{
+			"id": "04",
+			"name": "Fortaleza Brazil Temple",
+			"address": "Avenida Santos Dumont 7771 Bairro de Lourdes - Fortaleza-CE, Brazil",
+			"phone": "(55) 85-3533-7150",
+			"email": "fortaleza_temple@ldschurch.org",
+			"services":["No clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+			"baptism": ["09:20 am", "11:10 am", "02:30 pm", "04:30pm"],
+			"endowment": ["09:30 am", "11:30 am", "02:30 pm", "04:30pm"],
+			"sealment": ["10:30 am", "11:30 am", "02:00 pm", "03:00pm"],
+			"history": "The Fortaleza Temple is a religious temple owned by The Church of Jesus Christ of Latter-day Saints. Its announcement came on October 3, 2009[1][2], in a general conference address by the late Church President Thomas Spencer Monson. The groundbreaking ceremony took place on the morning of November 15, 2011, presided over by Church Apostle David A. Bednar, where the current Temple design was revealed to the members present and, consequently, to the general public. On the occasion, before the congregation, the apostle of the Church spoke in his speech: “This temple will be a source of hope, of light and of faith in God for all those who come here and walk on this ground. This city will always be better and different, due to the Temple that will be built here. On behalf of The Church of Jesus Christ of Latter-day Saints, I express gratitude.",
+			"imageurl": "https://assets.ldscdn.org/67/8c/678c7c8c557a71314eefc342a9a7a153ef2cfaef/rio_de_janeiro_brazil_temple.jpeg",
+			"closure": "10:00pm",
+			"new": "no"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+/* 35rem is also 560px when basefont is 16px */
+
+
+@media only screen and (max-width: 959px){
+    
+    .temples{
+        padding: 20px;
+        margin: 20px 0px 20px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+    }
+
+    .temples section{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .temples section img{
+        max-width: 60%;
+        margin: 5px;
+    }
+
+    .temples section p, .temples section a{
+        font-size: 0.6em;
+    }
+
+    .templesList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .templesList section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .templesList p:nth-child(1){
+        font-weight: bold;
+        grid-row: 1;
+        grid-column: 1/5;
+    }
+
+    .templesList p:nth-child(2){
+        font-size: 0.8em;
+        grid-row: 2;
+        grid-column: 1/5;
+    }
+
+    .templesList p:nth-child(3){
+        font-size: 0.8em;
+        grid-row: 3;
+        grid-column: 1/5;
+    }
+
+    .templesList a{
+        font-size: 0.8em;
+        grid-row: 4;
+        grid-column: 1/5;
+    }
+
+}
+

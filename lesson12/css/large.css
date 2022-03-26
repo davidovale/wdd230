@@ -1,0 +1,54 @@
+/* 64rem is also 1028px when basefont is 16px */
+
+@media only screen and (min-width: 60rem){
+    
+    nav button {display: none;}
+
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+    }
+    
+    nav ul li a{
+        border: none;
+    }
+
+    
+/* >>>>>>>> MAIN <<<<<<<*/
+
+/* TEMPLES*/
+
+section {
+    /*background-color: #eeeeee;*/
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+section img{
+    max-width: 60%;
+}
+
+.templesList section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.templesList section:nth-child(odd){
+    border: 1px solid #eeeeee;
+    background-color: #ebfbfd;
+}
+
+.templesList section:nth-child(even){
+    
+    background-color: white;
+    border: 1px solid #eeeeee;
+}
+
+
+/* END TEMPLES*/
+
+/* >>>>>>>> END MAIN <<<<<<<*/
+    
+}
