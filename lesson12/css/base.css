@@ -28,12 +28,12 @@ header{
     padding: 10px;
     max-width: 100%;
 }
-  
-.bg-header{
-    background-image: url("../images/templo_01_horizontal.webp");
+
+body{
+    background-image: url("../images/temple_opacity.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    width: 100%;
 }
 
 
@@ -73,7 +73,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 60%;
+    width: 50%;
     order: 0;
 }
 
@@ -93,12 +93,6 @@ html{
     margin: 50px 10px 0px 10px;
 }
 
-#large_btn, #small_btn{
-    width: 30px;
-    height: 30px;
-    color: #030358;
-    padding: 0px 2px;
-}
 
 /* END HEADER */
   
@@ -151,6 +145,12 @@ html{
     margin: 10px 2px;
 }
 
+.btn-like{
+    max-width: 30px;
+    margin: 10px 2px 0px 0px;
+    padding: 0px 10px;
+}
+
 
 /* END TEMPLES*/
 
@@ -160,7 +160,7 @@ html{
 /* MENU */
 
 
-h1, p {margin: 0 2vw;}
+
 /* button menu*/
 nav button{
     margin: .2rem 2vw;
@@ -219,3 +219,79 @@ nav ul.open {
 #hamburguerBtn.open span:nth-child(1) {display: none;}
 #hamburguerBtn.open span:nth-child(2) {display: block;}
 /* END MENU */
+
+
+/* FOOTER*/
+
+.back-footer{
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.main-nav-footer h2{
+    font-size: 2rem;
+    padding: 0px;
+}
+.test-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.container-footer img{
+    width: 140px;
+    padding: 10px 0px 10px 50px;
+}
+
+.main-nav-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    padding: 0px 0px 0px 50px;
+}
+
+.main-nav-footer ul {
+    display: flex;
+}
+
+
+.text-footer{
+    font-size: 18px;
+}
+
+.location{
+    padding: 0px 0px 0px 200px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.location img{
+    width: 60px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 30px;
+    padding: 5px;
+    width: 93%;
+    font-size: 16px;
+    color: black;
+    border-top: 1px solid black;
+    
+    
+}
+
+
+
+/* END FOOTER*/

@@ -11,6 +11,15 @@
         height: 100px;
     }
 
+    .content-header{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    header h2, header h3{
+        font-size: 0.9em;
+    }
 
     .content{
         max-width: 90%;
@@ -23,37 +32,20 @@
         margin: 20px 0px 20px 0px;
         display: grid;
         grid-template-columns: 1fr;
+        max-width: 80%;
     }
 
-    .templesList{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-
-    .templesList p:nth-child(1){
-        font-weight: bold;
-        grid-row: 1;
-        grid-column: 1/5;
-    }
-
-    .templesList p:nth-child(2), .temples p:nth-child(2){
-        font-size: 0.8em;
-        grid-row: 2;
-        grid-column: 1/5;
-    }
-
-    .templesList p:nth-child(3), .temples p:nth-child(3){
-        font-size: 0.8em;
-        grid-row: 3;
-        grid-column: 1/5;
-    }
-
-    .templesList a, .temples a{
-        font-size: 0.8em;
-        grid-row: 4;
-        grid-column: 1/5;
+    .temples h2{
+        font-size: 1em;
     }
     
+    .btn-like{
+        max-width: 25px;
+        margin: 10px 2px 0px 0px;
+        padding: 0px 10px;
+    }
 
+    .content-header, footer, nav{
+        max-width: 85%;
+    }
 }

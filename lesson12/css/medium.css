@@ -2,13 +2,76 @@
 
 
 @media only screen and (max-width: 959px){
+
+    header h2, header h3{
+        font-size: 1.2em;
+    }
+
+    .content-header{
+        padding: 0px;
+    }
+
+    .images-header{
+        width: 20%;
+    }
+
+    .contact-info h2, .contact-info h3{
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .back-footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;  
+    }
+
+    .content-footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        padding: 0px;
+        margin: 10px;
+    }
+
+    .test-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .main-nav-footer{
+        padding: 0px;
+    }
+    
+    .test-flex img{
+        width: 30%;
+        
+    }
+
+    header, footer{
+        max-width: 85%;
+    }
+
+    footer{
+        display: block;
+    }
+
+    .text-footer, .location-footer p, .location-footer a{
+        font-size: 1em;
+    }
     
     .temples{
         padding: 20px;
         margin: 20px 0px 20px 0px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 90%;
+        max-width: 85%;
     }
 
     .temples section{
@@ -17,13 +80,13 @@
         padding: 0px;
     }
 
-    .temples section img{
+    .temple-images{
         max-width: 60%;
         margin: 5px;
     }
 
     .temples section p, .temples section a{
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
 
     .templesList{
@@ -59,6 +122,16 @@
         font-size: 0.8em;
         grid-row: 4;
         grid-column: 1/5;
+    }
+
+    .btn-like{
+        max-width: 25px;
+        margin: 10px 2px 0px 0px;
+        padding: 0px 10px;
+    }
+
+    .logo-header{
+        width: 130px;
     }
 
 }
