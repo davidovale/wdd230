@@ -174,7 +174,7 @@ function date(){
         datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
     }
     
-    document.querySelector("#date-footer").innerHTML = "Last Modification: " + document.lastModified;
+   // document.querySelector("#date-footer").innerHTML = "Last Modification: " + document.lastModified;
     document.querySelector("#copy").innerHTML = "&copy;"
     document.querySelector('#year').innerHTML = new Date(Date.now()).getFullYear();
 }
@@ -187,43 +187,6 @@ function toggleMenu(){
 const x = document.getElementById("hamburguerBtn");
 x.onclick = toggleMenu;
 
-function hide(id){
-  document.getElementById("plus"+id).style.display="none";
-  document.getElementById("history"+id).style.display="none";
-} 
-
-function btnPlus(id){
-  document.getElementById("plus"+id).style.display="";
-  document.getElementById("history"+id).style.display="";
-
-}
-
-function btnLess(id){
-  document.getElementById("plus"+id).style.display="none";
-  document.getElementById("history"+id).style.display="none";
-}
-
-function createLikes(like){
-  const auxLike = "like"+like;
-  //window.localStorage.setItem(auxLike, "no");
-
-}
-
-function setLike(like){
-  const auxLike = "like"+like;
-  const getItemValue = getLike(like);
-  if (getItemValue == "yes"){
-    localStorage.setItem(auxLike, "no");
-  }else{
-    localStorage.setItem(auxLike, "yes");
-  }
-  window.location.reload();
-}
-
-function getLike(like){
-  const auxLike = "like"+like;
-  return window.localStorage.getItem(auxLike);
-}
 // initialize display elements
 //const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");

@@ -48,4 +48,13 @@
     .content-header, footer, nav{
         max-width: 85%;
     }
+
+    .contentReserve{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionReserve a{
+        font-size: 1em;
+    }
 }

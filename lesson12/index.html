@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Final Project</title>
+        <title>Home</title>
         <meta charset="utf-8">
         <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds 
         and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints 
@@ -23,13 +23,10 @@
     </head>
     <body onload="date()">
         <header>
-            <!--<div class="bg-header">
-
-            </div>
-        -->
+            
             <div class="content-header">
                 <div class="img-name">
-                    <img src="images/logo_blank.png" alt="Londrina Society Logo" class="logo-header" id="img-top">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
                     
                 </div>
                 <div class="images-header">
@@ -40,13 +37,24 @@
                         <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
                     </a>
                 </div>
-                <div class="weather">
-                    aa
+                <div class="contact-info">
+                    <h2>Contact Us Now!</h2>
+                    <h3>+1 (310) 945-7354</h3>
+                    <h3>temple_hotel@reserves.com</h3>
                 </div>
             </div>
-            <div class="header-date">
+            <div class="header-date" style="display: none;">
                 <p id="date"></p>
             </div>
+            <div id="weather">
+                <div class="weather">
+                    <!-- JSON FILE-->
+                </div>
+                <div class="weatherDays">
+
+                </div>
+            </div>
+            
                 <!-- NAVIGATION HERE -->
                 <nav>
                     <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
@@ -59,7 +67,27 @@
                 </nav>
           </header>
         <main>
-
+            <div class="contentMain">
+                <div class="contentReserve">
+                    <img src="images/templo_01.webp" alt="Temple" class="img-temple">
+                    <section class="sectionReserve">
+                        <h1>Make your reserve now!</h1>
+                            <h3>Next to the temple.</h3>
+                            <h3>Suitable environment for temple worship.</h3>
+                            <h3>Comfortable rooms.</h3>
+                            <h3>Free transfer to the temple (guests only).</h3>
+                            <a href="reservation.html" value="Reserve">Reserve!</a>
+                    </section>
+                </div>
+                <div class="content-news">
+                    <h1>Temple Dedication: Rio de Janeiro - Brazil</h1>
+                    <img src="images/rio_de_janeiro_brazil_temple.webp" alt="Rio de Janeiro Temple" class="img-temple">
+                    <p>The Rio de Janeiro Brazil Temple of The Church of Jesus Christ of Latter-day Saints will be 
+                        dedicated in three sessions on Sunday, May 17, with a youth devotional the night before, 
+                        on Saturday, May 16. The dedicatory sessions and youth devotional will be broadcast to 
+                        all units in the Rio de Janeiro Brazil Temple District.</p>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="background-footer">
@@ -82,9 +110,7 @@
                           <label id="copy"></label> 
                           <label id="year"> </label> 
                           <span class="lastModification"></span><label class="bar"> |</label> 
-                          <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label><label class="bar">|</label> 
-                          <label id="wdd">&nbsp;WDD 230 Project </label><label class="bar">|</label> &nbsp;
-                          <label id="date-footer"></label>
+                          <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label>
                       </p>
                 </div>
                 <div class="number-visits" style="display: none;">
@@ -93,6 +119,8 @@
                 </div> 
             </div>
         </footer>
-        <script src="js/script.js"></script>  
+        <script src="js/script.js"></script>
+        <script src="js/weather.js"></script>
+        
     </body>
 </html>

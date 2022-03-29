@@ -54,6 +54,27 @@
         
     }
 
+    .contentReserve{
+        max-width: 85%;
+    }
+
+    .sectionReserve h1, .content-news h1{
+        font-size: 1.2em;
+    }
+
+    .content-news p{
+        font-size: 0.9em;
+    }
+
+    .sectionReserve h3{
+        font-size: 1em;
+    }
+
+    .sectionReserve a{
+        font-size: 1em;
+        text-align: center;
+    }
+
     header, footer{
         max-width: 85%;
     }

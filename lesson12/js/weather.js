@@ -1,4 +1,5 @@
-const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=3458449&appid=70d99af3e605450038d66d76ee240672';
+const requestURLW = 'https://api.openweathermap.org/data/2.5/weather?id=4348599&appid=70d99af3e605450038d66d76ee240672';
+const requestURLW2 = 'https://pro.openweathermap.org/data/2.5/forecast/hourly?id=4348599&appid=f2bc956b956e1c5893f7a9079b13c5a1';
 const divweather = document.querySelector('.weather');
 let windchill = "";
 
@@ -25,7 +26,6 @@ function capitalize(string) {
     return string[0].toUpperCase() + string.slice(1);
 }
 
-let choice = "";
 
   function displayWeather(varWeather) {
 
@@ -34,10 +34,7 @@ let choice = "";
     let temp = document.createElement('p');
     let currentTemp = document.createElement('span');
     let condition = document.createElement('p');
-    let speed = document.createElement('p');
-    let spanSpeed = document.createElement('span');
-    let pWindChill = document.createElement('p');
-    let spanWindChill = document.createElement('span');
+    let humidity = document.createElement('p');
 
     auxImage = `http://openweathermap.org/img/wn/${varWeather.weather[0].icon}@2x.png`;
 
@@ -51,32 +48,21 @@ let choice = "";
     currentTemp.setAttribute('id', 'temperature');
     currentTemp.textContent = `${((varWeather['main'].temp - 273.15) * (9/5) +32).toFixed(1)} ºF`;
     condition.textContent = capitalize(varWeather.weather[0].description);
-    condition.setAttribute('id', 'condition');
-    spanSpeed.setAttribute('id', 'speed');
-    spanSpeed.textContent = `${varWeather.wind['speed']} mph`;
-    spanWindChill.setAttribute('id', 'wind');
+    let auxHumidity = "Humidity: "+ varWeather['main'].humidity+"%";
+    humidity.textContent = auxHumidity;
     condition.setAttribute('class', 'negrito');
+    humidity.setAttribute('class', 'negrito');
     city.textContent = `${varWeather.name} (${((varWeather['main'].temp - 273.15) * (9/5) +32).toFixed(1)} ºF)`;
-
-    speed.textContent = 'Wind Speed: ';
-    pWindChill.textContent = 'Wind Chill: ';
-    speed.setAttribute('id', 'pspeed');
-    pWindChill.setAttribute('id', 'pWindChill');
-    spanWindChill.textContent = calcWindChill(((varWeather['main'].temp - 273.15) * (9/5) +32).toFixed(1), varWeather.wind[speed]);
-    //temp.appendChild(currentTemp);
-    speed.appendChild(spanSpeed);
-    pWindChill.appendChild(spanWindChill);
 
     divweather.appendChild(city);
     divweather.appendChild(icon);
     divweather.appendChild(temp);
     divweather.appendChild(condition);
-    divweather.appendChild(speed);
-    divweather.appendChild(pWindChill);
+    divweather.appendChild(humidity);
     
   }
 
-  fetch(requestURL)
+  fetch(requestURLW)
   .then(function (response) {
     return response.json();
   })

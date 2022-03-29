@@ -77,10 +77,6 @@ body{
     order: 0;
 }
 
-.weather{
-    justify-content: flex-end;
-}
-
 .img-facebook, .img-linkedin {
     width: 30px;
 }
@@ -92,6 +88,22 @@ html{
     text-align: center;
     margin: 50px 10px 0px 10px;
 }
+
+
+.weather h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.weather img{
+    width: 80px;
+}
+
+.weather p{
+    padding: 0px 10px;
+}
+
 
 
 /* END HEADER */
@@ -153,6 +165,84 @@ html{
 
 
 /* END TEMPLES*/
+
+/* CONTENT*/
+
+.contentReserve{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+}
+
+.contentReserve img{
+    grid-column: 1;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.sectionReserve{
+    grid-column: 2;
+}
+
+.sectionReserve{
+    padding: 10px 10px;
+    margin: 0px;
+}
+
+.sectionReserve h3{
+    text-align: left;
+    padding: 0px 10px;
+}
+
+.sectionReserve h1, .content-news h1{
+    text-align: center;
+    text-shadow: 0 1px 0 #ccc,
+0 2px 0 #c9c9c9,
+0 3px 0 #bbb,
+0 4px 0 #b9b9b9,
+0 5px 0 #aaa,
+0 6px 1px rgba(0,0,0,.1),
+0 0 5px rgba(0,0,0,.1),
+0 1px 3px rgba(0,0,0,.3),
+0 3px 5px rgba(0,0,0,.2),
+0 5px 10px rgba(0,0,0,.25),
+0 10px 10px rgba(0,0,0,.2),
+0 00px 20px rgba(0,0,0,.15);
+}
+
+.sectionReserve a{
+    padding: 0.5em;
+    margin: 1rem 3rem;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #eeeeee;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contentMain{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.content-news{
+    max-width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.content-news img{
+    grid-column: 1;
+    width: 30%;
+    border-radius: 50%;
+    
+}
+
+/* END CONTENT*/
+
 
 /* >>>>>>>> END MAIN <<<<<<<*/
 
