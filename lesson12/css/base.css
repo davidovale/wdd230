@@ -241,6 +241,15 @@ html{
     
 }
 
+.content-activities{
+    background-image: url("../images/templo_02_blank.jpg");
+    max-width: 40%;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
 /* END CONTENT*/
 
 
