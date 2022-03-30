@@ -243,10 +243,18 @@ html{
 
 .content-activities{
     background-image: url("../images/templo_02_blank.jpg");
-    max-width: 40%;
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+.content-attending{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
 
