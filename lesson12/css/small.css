@@ -49,7 +49,7 @@
         max-width: 85%;
     }
 
-    .contentReserve{
+    .contentReserve, .content-attending{
         display: flex;
         flex-direction: column;
     }

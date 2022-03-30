@@ -58,15 +58,19 @@
         max-width: 85%;
     }
 
-    .sectionReserve h1, .content-news h1{
+    .sectionReserve h1, .content-news h1, .feedback h1{
         font-size: 1.2em;
     }
 
-    .content-news p{
+    .content-news p, .content-activities p, .feedback p{
         font-size: 0.9em;
     }
 
-    .sectionReserve h3{
+    .content-attending h2{
+        font-size: 1em;
+    }
+
+    .sectionReserve h3, .feedback h3{
         font-size: 1em;
     }
 
