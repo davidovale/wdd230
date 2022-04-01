@@ -1,9 +1,9 @@
 const requestURL = 'data/data.json';
 const temples = document.querySelector('.temples');
-const templesList = document.querySelector('.templesList');
 let choice = "";
-let serv = [];
 let auxTime = 0;
+let auxSelect = 0;
+const selectTemple = document.querySelector('.temple-list');
 
   function displayTemples(temple) {
     // Create elements to add to the document
@@ -63,11 +63,12 @@ let auxTime = 0;
     const auxFunctionLess = 'btnLess("'+temple.id+'")';
     btnLess.setAttribute('onclick', auxFunctionLess);
     btnLess.textContent = "-";
-
+    
     let auxBtnLike = "like"+temple.id;
     btnLike.setAttribute('id', auxBtnLike);
     btnLike.setAttribute('alt', temple.id);
     btnLike.setAttribute('class', 'btn-like');
+
     let valueLike = getLike(temple.id);
     if(valueLike == "yes"){
       btnLike.setAttribute('src', 'images/like_yes.png');
@@ -80,8 +81,7 @@ let auxTime = 0;
     btnLike.setAttribute('onclick', setLikeFunction);
 
     createLikes(temple.id);
-    
-    //image.setAttribute('onclick', 'newPopup()')
+     
 
     name.textContent = temple.name;
     address.textContent = temple.address;
@@ -95,6 +95,8 @@ let auxTime = 0;
     lblSealment.textContent = "Sealment";
     lblClosure.textContent = "Closure";
     lblHistory.textContent = "History";
+
+    createSelect(temple.name);
 
     sectionPlus.appendChild(lblServices);
 
@@ -151,6 +153,8 @@ let auxTime = 0;
 
     temples.appendChild(section);
     hide(temple.id);
+    
+    //templesList.appendChild(optionTemple);
   }
 
   fetch(requestURL)
@@ -238,3 +242,12 @@ function Modification(){
     document.querySelector(".lastModification").innerHTML = "Last Update: " + lastModified;
   }
   
+let lista = document.getElementById('templesList');
+function createSelect(value){
+  
+    var opt = document.createElement('option');
+    opt.value = auxSelect;
+    opt.innerHTML = value;
+    lista.appendChild(opt);
+    auxSelect += 1;
+}

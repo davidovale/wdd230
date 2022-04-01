@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="description" content="The Reservation page contains a form that collects relevant information when making a 
+        normal stay reservation including the location, date, number and type of rooms, registrant's full name, email, phone, 
+        home state or country, and special accommodations/comments. Make sure to do some form validation.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/base.css">
+
+        <link type="text/css" rel="stylesheet" href="css/medium.css">
+        <link type="text/css" rel="stylesheet" href="css/small.css">
+        <link type="text/css" rel="stylesheet" href="css/large.css">
+    </head>
+    <body onload="date()">
+        <header>
+            
+            <div class="content-header">
+                <div class="img-name">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                    
+                </div>
+                <div class="images-header">
+                    <a target="blank" href="https://www.facebook.com/">
+                        <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                    </a>            
+                    <a target="blank" href="https://linkedin.com/">
+                        <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Us Now!</h2>
+                    <h3>+1 (310) 945-7354</h3>
+                    <h3>temple_hotel@reserves.com</h3>
+                </div>
+            </div>
+            <div class="header-date" style="display: none;">
+                <p id="date"></p>
+            </div>
+            <div id="weather">
+                <div class="weather">
+                    <!-- JSON FILE-->
+                </div>
+                <div class="weatherDays">
+
+                </div>
+            </div>
+            
+                <!-- NAVIGATION HERE -->
+                <nav>
+                    <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="temple.html">Temples</a></li>
+                        <li class="active"><a href="reservation.html">Reservation</a></li>
+                        <li><a href="#">Contact Us</a></li> 
+                    </ul>
+                </nav>
+          </header>
+          <main>      
+            <div id="temples" class="temples" style="display: none;"></div>
+            <div class="divform">
+                <h1>Make your Reserve</h1>
+                <form name="myForm" method="get" action="thankyou.html">
+                    <div class="temple-list">
+                        <select id="templesList" class="templesList">
+
+                        </select>
+                    </div>
+                    <section class="personalInformation">
+                        <div>
+                            <h2>Personal Information</h2>
+                            <label for="firstName">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Peter">
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" class="lastName" required placeholder="Smith">
+                        </div>
+                    </section>
+                    <section class="contactInformation">
+                        <div>
+                            <h2>Contact Information</h2>
+                            <label for="txtEmail">Email <span class="required">*</span></label>
+                            <input type="email" id="txtEmail" name="txtEmail" placeholder="example@gmail.com" required>
+                        </div>
+                        <div>  
+                            <label for="tel">Tel <span class="required">*</span></label>
+                            <input type="tel" id="tel" name="tel" required placeholder="+55 43 30274012">
+                        </div>
+                    </section>
+                    <section class="businessInformation">
+                        <div>
+                            <h2>Business Information</h2>
+                            <label for="txtBusPosition">Business Position</label>
+                            <input type="text" id="txtBusPosition" name="txtBusPosition" 
+                            required placeholder="Founder/Owner" pattern="^[-\s\da-zA-Z]{7,}"
+                            oninvalid="this.setCustomValidity('☝🏼 Please enter only alpha characters.')" 
+                            >
+                        </div>
+                        <div>
+                            <label for="txtBusName">Business Name <span class="required">*</span></label>
+                            <input type="text" id="txtBusName" name="txtBusName" required placeholder="Enter your business name">
+                        </div>
+                        <div>
+                            <label for="textarea">Business Description</label>
+                            <textarea id="textarea" name="textarea" class="textarea" cols="36" rows="5" placeholder="Describe your business"></textarea>
+                        </div>
+                    </section>
+                    <section class="membershipLevel">
+                        <fieldset>
+                            <legend>Membership Levels</legend>
+                            <div class="radioLevel">
+                                <h2 class="h2membership">Membership Level</h2>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label><input type="radio" id="radioLevel" name="radioLevel" value="np">
+                                            NP Membership</label>
+                                            <label class="lbl-description"> - non profit organizations have no 
+                                                fees and can be showed on our directory page</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="radio" name="radioLevel" value="bronze">
+                                            Bronze Membership</label>
+                                            <label class="lbl-description"> - ( $395 / year) It's listed on the Directory page, 
+                                                1 annual training, 5% discount on events</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="radio" name="radioLevel" value="Silver">
+                                            Silver Membership</label>
+                                            <label class="lbl-description"> - ( $795 / year) Previous benefits, 2 semester trainings, 
+                                                10% discount on events, advertisements</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="radio" name="radioLevel" value="Gold">
+                                            Gold Membership</label>
+                                            <label class="lbl-description"> - ( $1395 / year) Previous benefits, 2 bimonthly trainings, 
+                                                20% discount on events, advertisements</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <input type="hidden" id="dateTime" name="dateTime">
+                    <div class="submit">
+                        <input type="submit" value="Validate My Form">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="background-footer">
+                <div class="back-footer">
+                    <div class="test-flex">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                        
+                        <nav class="main-nav-footer">
+                            <label class="text-footer">4800 Montgomery Ln #300, Bethesda, MD 20814</label>
+                        </nav>
+                    </div>
+                    <div class="location-footer">
+                        <p>temple_hotel@reserves.com</p>
+                        <p>+1 (310) 945-7354</p>
+                        📍<a target="blank" href="https://goo.gl/maps/h9VWhbneSYemmfo57">Location Map</a>
+                    </div>
+                </div> 
+                <div class="content-footer">
+                        <p>
+                            <label id="copy"></label> 
+                            <label id="year"> </label> 
+                            <span class="lastModification"></span><label class="bar"> |</label> 
+                            <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label>
+                        </p>
+                </div>
+                <div class="number-visits" style="display: none;">
+                    <p><span class="label-time">Number of Visits: </span>
+                        <span class="visits"></span></p>
+                </div> 
+            </div>
+        </footer>
+        <script src="js/temples.js"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
