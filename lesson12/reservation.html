@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home</title>
+        <title>Reserve</title>
         <meta charset="utf-8">
         <meta name="description" content="The Reservation page contains a form that collects relevant information when making a 
         normal stay reservation including the location, date, number and type of rooms, registrant's full name, email, phone, 
@@ -61,28 +61,39 @@
           </header>
           <main>      
             <div id="temples" class="temples" style="display: none;"></div>
-            <div class="divform">
+            <div class="div-form">
                 <h1>Make your Reserve</h1>
                 <form name="myForm" method="get" action="thankyou.html">
                     <div class="temple-list">
                         <select id="templesList" class="templesList">
 
                         </select>
+                        <span>From: </span><input type="date" id="dateReserveStart"></input>
+                        <span>To: </span><input type="date" id="dateReserveEnd"></input>
+                        <p>&nbsp;</p>
                     </div>
-                    <section class="personalInformation">
-                        <div>
-                            <h2>Personal Information</h2>
-                            <label for="firstName">First Name <span class="required">*</span></label>
-                            <input type="text" id="firstName" name="firstName" required placeholder="Peter">
+                    <section class="roomInformation">
+                        <div class="rooms">
+                            <h2>Rooms</h2>
+                            <select id="selectRoom" onmouseup="chooseRoom(this.value);">
+                                <option value="roomFamily">Family</option>
+                                <option value="roomSingleMissionary">Full time missionary (single)</option>
+                                <option value="roomCoupleMissionary">Full time missionary (couple)</option>
+                                <option value="roomWedding">Wedding</option>
+                                <option value="roomSingleAdults">Single Adults</option>
+                            </select>
                         </div>
-                        <div>
-                            <label for="lastName">Last Name <span class="required">*</span></label>
-                            <input type="text" id="lastName" name="lastName" class="lastName" required placeholder="Smith">
+                        <div class="roomsInfo">
+                            <span id="spanInfoRoom"></span>
                         </div>
                     </section>
-                    <section class="contactInformation">
+                    <section class="personalInformation">
                         <div>
-                            <h2>Contact Information</h2>
+                            <h2>Registrant</h2>
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" class="fullName" required placeholder="Toddy Callister Smith">
+                        </div>
+                        <div>
                             <label for="txtEmail">Email <span class="required">*</span></label>
                             <input type="email" id="txtEmail" name="txtEmail" placeholder="example@gmail.com" required>
                         </div>
@@ -90,70 +101,60 @@
                             <label for="tel">Tel <span class="required">*</span></label>
                             <input type="tel" id="tel" name="tel" required placeholder="+55 43 30274012">
                         </div>
-                    </section>
-                    <section class="businessInformation">
-                        <div>
-                            <h2>Business Information</h2>
-                            <label for="txtBusPosition">Business Position</label>
-                            <input type="text" id="txtBusPosition" name="txtBusPosition" 
-                            required placeholder="Founder/Owner" pattern="^[-\s\da-zA-Z]{7,}"
-                            oninvalid="this.setCustomValidity('☝🏼 Please enter only alpha characters.')" 
-                            >
-                        </div>
-                        <div>
-                            <label for="txtBusName">Business Name <span class="required">*</span></label>
-                            <input type="text" id="txtBusName" name="txtBusName" required placeholder="Enter your business name">
-                        </div>
-                        <div>
-                            <label for="textarea">Business Description</label>
-                            <textarea id="textarea" name="textarea" class="textarea" cols="36" rows="5" placeholder="Describe your business"></textarea>
+                        <div>  
+                            <label for="txtHome">Home State / Country <span class="required">*</span></label>
+                            <input type="text" id="txtHome" name="txtHome" required placeholder="Alabama / EUA">
                         </div>
                     </section>
-                    <section class="membershipLevel">
+                    <section class="participantsInformation">
+                        <div id="divHeadPartInfo">
+                            
+                        </div>
+                        <div id="divParticipantInfo">
+                            
+                        </div>
+                        
+                    </section>
+                    <section class="specialInformation">
+                        <div>
+                            <h2>Special Accommodations / </h2>
+                            <h2>Comments</h2>
+                            <textarea id="textarea" name="textarea" class="textarea" cols="36" rows="5" 
+                            placeholder="Crib, wheelchair, translator headphones, any type of allergy, etc."></textarea>
+                        </div>
+                    </section>
+                    <section class="helpfulInformation">
                         <fieldset>
-                            <legend>Membership Levels</legend>
-                            <div class="radioLevel">
-                                <h2 class="h2membership">Membership Level</h2>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <label><input type="radio" id="radioLevel" name="radioLevel" value="np">
-                                            NP Membership</label>
-                                            <label class="lbl-description"> - non profit organizations have no 
-                                                fees and can be showed on our directory page</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label><input type="radio" name="radioLevel" value="bronze">
-                                            Bronze Membership</label>
-                                            <label class="lbl-description"> - ( $395 / year) It's listed on the Directory page, 
-                                                1 annual training, 5% discount on events</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label><input type="radio" name="radioLevel" value="Silver">
-                                            Silver Membership</label>
-                                            <label class="lbl-description"> - ( $795 / year) Previous benefits, 2 semester trainings, 
-                                                10% discount on events, advertisements</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label><input type="radio" name="radioLevel" value="Gold">
-                                            Gold Membership</label>
-                                            <label class="lbl-description"> - ( $1395 / year) Previous benefits, 2 bimonthly trainings, 
-                                                20% discount on events, advertisements</label>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <legend>Specialized Services</legend>
+                            <div class="helpful-know">
+                                <p>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far 
+                                    and need to change to and from church clothes</p>
+                                <p>Playroom and low-cost, short-term babysitting services for the children of patrons</p>
+                                <p>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</p>
+                                <p>Temple history themed reception and sitting area</p>
+                                <p>Wedding reception hall that can be easily customized with a simple catering menu and 
+                                    kitchen access for food preparation and serving</p>
+                                <p>A family search center that supports family search and ordinance work</p>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="freeAmenities">
+                        <fieldset>
+                            <legend>Free Amenities</legend>
+                            <div class="helpful-know">
+                                <p>Breakfast</p>
+                                <p>Exercise/workout room</p>
+                                <p>Indoor pool</p>
+                                <p>WiFi high-speed internet access and smart TVs</p>
+                                <p>Parking</p>
+                                <p>Temple shuttle</p>
+                                <p>Family history consultation and family ordinance card service</p>
                             </div>
                         </fieldset>
                     </section>
                     <input type="hidden" id="dateTime" name="dateTime">
                     <div class="submit">
-                        <input type="submit" value="Validate My Form">
+                        <input type="submit" value="Validate Reserve">
                     </div>
                 </form>
             </div>

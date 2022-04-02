@@ -159,5 +159,23 @@
         width: 130px;
     }
 
+    .roomInformation{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 100px 0px;
+    }
+
+    .personalInformation div input, .participantsInformation, .specialInformation div input, .helpfulInformation div input, .rooms select, #divParticipantInfo input{
+        width: 250px;
+    }
+
+    #textarea{
+        width: 220px;
+    }
+
+    .helpfulInformation, .freeAmenities{
+        width: 80%;
+    }
+
 }
 

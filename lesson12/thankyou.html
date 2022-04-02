@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Join Page</title>
+    <meta charset="utf-8">
+    <meta name="description" content="In this assignment, you will complete the Join page on the chamber of commerce site. 
+    The purpose of this page is for the prospective user to apply to join the chamber of commerce through a membership 
+    application form. The following instructions provide the specific form input and interaction requirements.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+  </head>
+    <body>
+        <header>
+            
+            <div class="content-header">
+                <div class="img-name">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                    
+                </div>
+                <div class="images-header">
+                    <a target="blank" href="https://www.facebook.com/">
+                        <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                    </a>            
+                    <a target="blank" href="https://linkedin.com/">
+                        <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Us Now!</h2>
+                    <h3>+1 (310) 945-7354</h3>
+                    <h3>temple_hotel@reserves.com</h3>
+                </div>
+            </div>
+            <div class="header-date" style="display: none;">
+                <p id="date"></p>
+            </div>
+            <div id="weather">
+                <div class="weather">
+                    <!-- JSON FILE-->
+                </div>
+                <div class="weatherDays">
+
+                </div>
+            </div>
+            
+                <!-- NAVIGATION HERE -->
+                <nav>
+                    <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="temple.html">Temples</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="#">Contact Us</a></li> 
+                    </ul>
+                </nav>
+          </header>
+        <main>            
+            <div class="divform">
+                <h1>You have successfully completed the form!</h1>
+                    <section name="information" class="information">
+                        <div>
+                            
+                            <p>Thank you very much for completing the form, 
+                                <label id="fullName" name="fullName"></label>
+                                .
+                            </p>
+                            <p> 
+                                We will contact you shortly and within 24 hours you will receive a 
+                                confirmation message via email: <label id="txtEmail" name="txtEmail"></label> or
+                                via cell phone: <label id="txtTel" name="txtTel"></label>
+                            </p>
+                            
+                        </div>
+                    </section>
+                    
+            </div>
+        </main>
+        <footer>
+            <div class="background-footer">
+                <div class="back-footer">
+                    <div class="test-flex">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                        
+                        <nav class="main-nav-footer">
+                            <label class="text-footer">4800 Montgomery Ln #300, Bethesda, MD 20814</label>
+                        </nav>
+                    </div>
+                    <div class="location-footer">
+                        <p>temple_hotel@reserves.com</p>
+                        <p>+1 (310) 945-7354</p>
+                        📍<a target="blank" href="https://goo.gl/maps/h9VWhbneSYemmfo57">Location Map</a>
+                    </div>
+                </div> 
+                <div class="content-footer">
+                        <p>
+                            <label id="copy"></label> 
+                            <label id="year"> </label> 
+                            <span class="lastModification"></span><label class="bar"> |</label> 
+                            <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label>
+                        </p>
+                </div>
+                <div class="number-visits" style="display: none;">
+                    <p><span class="label-time">Number of Visits: </span>
+                        <span class="visits"></span></p>
+                </div> 
+            </div>
+        </footer>
+      <script src="js/script_thankyou.js"></script>
+    </body>
+</html>

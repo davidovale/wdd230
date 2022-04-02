@@ -256,7 +256,83 @@ html{
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
+.div-form h1{
+    margin: 5px 20px;
+}
 
+.temple-list{
+    width: 100%;
+}
+
+.temple-list span{
+    float: left;
+    padding: 1px 20px;
+}
+
+.temple-list select, .temple-list input{
+    margin: 5px 10px;
+    float: left;
+}
+
+section{
+    margin: 50px 20px;
+}
+
+.roomInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.submit{
+    margin: 5px 20px;
+}
+
+
+/* FORM */
+
+.personalInformation div label, .participantsInformation, .specialInformation div label, .helpfulInformation div label{
+    display: block;
+}
+
+.personalInformation div input, .participantsInformation, .specialInformation div input, .helpfulInformation div input, #divParticipantInfo input{
+    margin: 2px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 0px;
+}
+
+.rooms select{
+    margin: 2px;
+
+    border-radius: 15px;
+    padding: 0px;
+}
+
+.temple-list select{
+    margin: 2px;
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    padding: 0px 0px 0px 15px;
+}
+
+.temple-list input{
+    margin: 2px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0px 0px 0px 15px;
+}
+
+.divform{
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    display: grid;
+    flex-direction: column;
+}
+
+
+/* END FORM */
 
 /* END CONTENT*/
 

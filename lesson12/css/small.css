@@ -57,4 +57,18 @@
     .sectionReserve a{
         font-size: 1em;
     }
+
+    .div-form, .helpfulInformation, .freeAmenities{
+        padding: 0px;
+        margin: 0px;
+        width: 90%;
+    }
+
+    .specialInformation, .personalInformation{
+        margin: 0px;
+    }
+
+    #textarea{
+        width: 80%;
+    }
 }

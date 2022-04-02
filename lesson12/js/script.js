@@ -251,3 +251,40 @@ function createSelect(value){
     lista.appendChild(opt);
     auxSelect += 1;
 }
+
+function chooseRoom(value){
+  let text="";
+  let aux=0;
+  if(value == 'roomFamily'){
+    text = "<h2>Room Family</h2><h3>1 double bed</h3><h3>4 single bad</h3><h3>Freezer, TV, LDS Games</h3>";
+    aux = 5;
+  }else if(value == 'roomSingleMissionary'){
+    text = "<h2>Room Single Missionary</h2><h3>4 single bad</h3><h3>Freezer, TV</h3><h3>Liahona, Ensign</h3><h3>Missionary Library</h3><h3>Missionary Movies</h3>";
+    aux = 3;
+  }else if(value == 'roomCoupleMissionary'){
+    text = "<h2>Room Couple Missionary</h2><h3>1 double bad</h3><h3>Freezer, TV</h3><h3>Liahona, Ensign</h3><h3>Missionary Library</h3><h3>Missionary Movies</h3>";
+    aux = 1;
+  }else if(value == 'roomWedding'){
+    text = "<h2>Room Wedding</h2><h3>1 double bad</h3><h3>Freezer, TV</h3><h3>Marriage Advice Programs</h3><h3>Liahona, Ensign</h3><h3>Make-up kit, Profesional Hairbrush</h3><h3>1 Chocolate cake</h3>";
+    aux = 1;
+  }else if(value == 'roomSingleAdults'){
+    text = "<h2>Room Single Adults</h2><h3>5 single bad</h3><h3>Freezer, TV, LDS Games</h3><h3>Liahona, Ensign</h3>";
+    aux = 4;
+  }else{
+    text = "";
+  }
+  document.getElementById('spanInfoRoom').innerHTML = text;
+  participants(aux);
+  
+}
+
+function participants(aux){
+  let divParticipantInfo = document.querySelector('#divParticipantInfo');
+  let divHeadPartInfo = document.querySelector('#divHeadPartInfo');
+  divParticipantInfo.innerHTML = "";
+  divHeadPartInfo.innerHTML = "<h2>Participants Information</h2>";
+  for(let i=0; i<aux; i++){
+    divParticipantInfo.innerHTML += "<div><label for='txtP"+i+"'> Full Name</label><input type='text' id='txtP"+i+"' placeholder='Maria Flores Martins'></input></div>";
+  
+  }
+}
