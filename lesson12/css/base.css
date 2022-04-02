@@ -89,6 +89,10 @@ html{
     margin: 50px 10px 0px 10px;
 }
 
+.weather{
+    background-color: #b5daf0;
+    padding: 2px;
+}
 
 .weather h2{
     font-size: 20px;
@@ -287,6 +291,60 @@ section{
     margin: 5px 20px;
 }
 
+.newLinks{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.newLinks a{
+    margin: 0px 30px;
+    padding: 2px;
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+}
+
+.newLinks a:hover{
+    background-color: rgba(0,0,0,0.1);
+    color: #000000;
+}
+
+.contentWedding{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contentWedding img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.contentFood img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.sectionFood{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.generalServices h1, .contentFood h1, .sectionWedding h1{
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 0px 20px rgb(0 0 0 / 15%);
+}
+
+.sectionGeneralServices input, .sectionGeneralServices span{
+    font-size: 18px;
+    padding: 2px 20px;
+
+}
+
+.sectionGeneralServices{
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* FORM */
 
@@ -299,6 +357,7 @@ section{
     width: 300px;
     border-radius: 15px;
     padding: 0px;
+    padding: 0px 0px 0px 10px;
 }
 
 .rooms select{

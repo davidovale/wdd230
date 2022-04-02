@@ -1,5 +1,5 @@
 const requestURLW = 'https://api.openweathermap.org/data/2.5/weather?id=4348599&appid=70d99af3e605450038d66d76ee240672';
-const requestURLW2 = 'https://pro.openweathermap.org/data/2.5/forecast/hourly?id=4348599&appid=f2bc956b956e1c5893f7a9079b13c5a1';
+const requestURLW2 = 'https://api.openweathermap.org/data/2.5/forecast?id=4348599&units=imperial&appid=2776b0619ca272f3d43719a8df7e1262';
 const divweather = document.querySelector('.weather');
 let windchill = "";
 

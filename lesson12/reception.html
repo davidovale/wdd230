@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reception</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This page shows information about the wedding reception accommodations, 
+        including options for food service and setup..">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/base.css">
+
+        <link type="text/css" rel="stylesheet" href="css/medium.css">
+        <link type="text/css" rel="stylesheet" href="css/small.css">
+        <link type="text/css" rel="stylesheet" href="css/large.css">
+    </head>
+    <body onload="date()">
+        <header>
+            
+            <div class="content-header">
+                <div class="img-name">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                    
+                </div>
+                <div class="images-header">
+                    <a target="blank" href="https://www.facebook.com/">
+                        <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                    </a>            
+                    <a target="blank" href="https://linkedin.com/">
+                        <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Us Now!</h2>
+                    <h3>+1 (310) 945-7354</h3>
+                    <h3>temple_hotel@reserves.com</h3>
+                </div>
+            </div>
+            <div class="header-date" style="display: none;">
+                <p id="date"></p>
+            </div>
+            
+            
+            <!-- NAVIGATION HERE -->
+            <nav>
+                <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temples</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li class="active"><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="temples" class="temples" style="display: none;"></div>
+            <div class="newLinks">
+                <a href="reception.html">Reception</a>
+                <a href="missionary.html">Full-time temple missionary</a>
+            </div>
+            <div class="contentWedding">
+                <img src="images/weddingRoom.webp" alt="Wedding Room">
+                <section class="sectionWedding">
+                    <h1> - Wedding Reception</h1>
+                    <h3> - You will be greeted with applause by our entire reception team</h3>
+                    <h3> - One of our staff will escort you to your room</h3>
+                    <h3> - A photo of you can be taken to leave as a souvenir of the hotel</h3>
+                    <h3> - Transfer to the temple will be done by our exclusive car for newlyweds</h3>
+                    <h3> - You will receive a picture of the temple where you will be sealed</h3>
+                    <h3> - A gift will be given to you by our team</h3>
+                </section>
+            </div>
+            <form name="myForm" method="get" action="thankyou.html">
+                <div class="contentFood">
+                    <h1> - Choose your Meals</h1>
+                    <section class="sectionFood">
+                        <div class="food01">
+                            <img src="images/breakfast.webp" alt="Breakfast">
+                            <input type="checkbox" id="rdBreakfast" name="rdBreakfast" value="yes"><span>Breakfast</span>
+                        </div>
+                        <div class="food02">
+                            <img src="images/lunch.webp" alt="Lunch">
+                            <input type="checkbox" id="rdLunch" name="rdLunch" value="yes"><span>Lunch</span>
+                        </div>
+                        <div class="food03">
+                            <img src="images/afternoonsnack.webp" alt="Aftternoon Snack">
+                            <input type="checkbox" id="rdAftSnack" name="rdAftSnack" value="yes"><span>Afternoon Snack</span>
+                        </div>
+                        <div class="food04">
+                            <img src="images/dinner.webp" alt="Dinner">
+                            <input type="checkbox" id="rdDinner" name="rdDinner" value="yes"><span>Dinner</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="generalServices">
+                    <h1> - General Services</h1>
+                    <section class="sectionGeneralServices">
+                        <div><input type="checkbox" id="chLaundry" name="chLaundry" value="yes"><span>Laundry</span></div>
+                        <div><input type="checkbox" id="chHairStylist" name="chHairStylist" value="yes"><span>Hair Stylist</span></div>
+                        <div><input type="checkbox" id="chMakeup" name="chMakeup" value="yes"><span>Makeup Artist</span></div>
+                        <div><input type="checkbox" id="chManicure" name="chManicure" value="yes"><span>Manicure</span></div>
+                        <div><input type="checkbox" id="chChildrenCaregiver" name="chChildrenCaregiver" value="yes"><span>Children Caregiver</span></div>
+                        <div><input type="checkbox" id="chchSpareDress" name="chSpareDress" value="yes"><span>Spare Dress</span></div>
+                        <div><input type="checkbox" id="chSpareSuit" name="chSpareSuit" value="yes"><span>Spare Suit</span></div>                    
+                    </section>
+                </div>
+                <input type="submit" value="Register Information">
+            </form>
+        </main>
+        <footer>
+            <div class="background-footer">
+                <div class="back-footer">
+                  <div class="test-flex">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                      
+                      <nav class="main-nav-footer">
+                          <label class="text-footer">4800 Montgomery Ln #300, Bethesda, MD 20814</label>
+                      </nav>
+                  </div>
+                  <div class="location-footer">
+                      <p>temple_hotel@reserves.com</p>
+                      <p>+1 (310) 945-7354</p>
+                      📍<a target="blank" href="https://goo.gl/maps/h9VWhbneSYemmfo57">Location Map</a>
+                  </div>
+                </div> 
+                <div class="content-footer">
+                      <p>
+                          <label id="copy"></label> 
+                          <label id="year"> </label> 
+                          <span class="lastModification"></span><label class="bar"> |</label> 
+                          <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label>
+                      </p>
+                </div>
+                <div class="number-visits" style="display: none;">
+                    <p><span class="label-time">Number of Visits: </span>
+                        <span class="visits"></span></p>
+                </div> 
+            </div>
+        </footer>
+        <script src="js/temples.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

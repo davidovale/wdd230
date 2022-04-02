@@ -173,8 +173,28 @@
         width: 220px;
     }
 
+    .contentWedding{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sectionGeneralServices{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     .helpfulInformation, .freeAmenities{
         width: 80%;
+    }
+
+    .contentFood img{
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .sectionFood{
+        display: flex;
+        flex-direction: column;
     }
 
 }
