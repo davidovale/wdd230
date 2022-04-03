@@ -303,7 +303,7 @@ html{
     width: 100%;
 }
 
-.temple-list span{
+.temple-list label{
     float: left;
     padding: 1px 20px;
 }
