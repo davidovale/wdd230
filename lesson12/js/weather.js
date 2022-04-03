@@ -2,9 +2,17 @@ const requestURLW = 'https://api.openweathermap.org/data/2.5/weather?id=4348599&
 const requestURLW2 = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.980671&lon=-77.100258&exclude=current,hourly,minutely&appid=2776b0619ca272f3d43719a8df7e1262';
 const divweather = document.querySelector('.weather');
 const divweatherF = document.querySelector('.weatherDays');
+const divweatherAlert = document.querySelector('#weatherAlert');
+const yellowAlert = [300,500,501,600,601];
+const redAlert = [200,201,202,210,211,212,221,230,231,232,301,302,310,311,312,313,314,321,503,504,511,520,521,522,531,602,611,612,613,615,616,620,621,622];
 let windchill = "";
 let auxDaily = 0;
 const week = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let climateAlert = "";
+
+function closeAlert(){
+  document.getElementById('weatherAlert').style.display="none";
+}
 
 function takeWeek (value){
   let day = new Date();
@@ -41,7 +49,7 @@ function displayForecast(varForecast){
     let dayWeek = document.createElement('h2');
     let desc = document.createElement('h3');
     let imgF = document.createElement('img');
-    let tempF = document.createElement('span');
+    let tempF = document.createElement('p');
 
     desc.textContent = capitalize(varForecast.weather[0].description);
     auxImg = `http://openweathermap.org/img/wn/${varForecast.weather[0].icon}@2x.png`;
@@ -71,9 +79,39 @@ function displayForecast(varForecast){
 
     auxImage = `http://openweathermap.org/img/wn/${varWeather.weather[0].icon}@2x.png`;
 
-    //(308 K − 273,15) × 9/5 + 32 = ºF
-    //<p>Wind Chill:<span id="wind"></span></p>
-    
+    //<input type="button" value="X" onclick="closeAlert()">
+    //auxYAlert = ""+varWeather.weather[0].id;
+    if (yellowAlert.indexOf(varWeather.weather[0].id) > -1){
+      divweatherAlert.setAttribute('class', 'yellowAlert');
+      let yh2 = document.createElement('h2');
+      yh2.textContent = "Be careful, today we'll have "+varWeather.weather[0].description;
+      let yBtn = document.createElement('button');
+      yBtn.setAttribute('onclick', 'closeAlert()');
+      yBtn.textContent = "Close Alert";
+      yBtn.setAttribute('class', 'btnAlert');
+      let yImg = document.createElement('img');
+      yImg.setAttribute('src','images/alert.png');
+      yImg.setAttribute('alt', 'Alert');
+
+      divweatherAlert.appendChild(yh2);
+      divweatherAlert.appendChild(yImg);
+      divweatherAlert.appendChild(yBtn);
+    }else if (redAlert.indexOf(varWeather.weather[0].id) > -1){
+      divweatherAlert.setAttribute('class', 'redAlert');
+      let rh2 = document.createElement('h2');
+      rh2.textContent = "DANGEROUS!!! Stay at home. Today we'll have "+varWeather.weather[0].description;
+      let rBtn = document.createElement('button');
+      rBtn.setAttribute('onclick', 'closeAlert()');
+      rBtn.textContent = "Close Alert";
+      rBtn.setAttribute('class', 'btnAlert');
+      let rImg = document.createElement('img');
+      rImg.setAttribute('src','images/forbidden.png');
+      rImg.setAttribute('alt', 'Forbidden');
+
+      divweatherAlert.appendChild(rh2);
+      divweatherAlert.appendChild(rImg);
+      divweatherAlert.appendChild(rBtn);
+    }
     
     icon.setAttribute('src', auxImage);
     icon.setAttribute('alt', varWeather.main)

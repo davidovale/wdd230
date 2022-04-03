@@ -63,6 +63,13 @@ section img{
     padding: 5px;
 }
 
+#weatherAlert img{
+    width: 100px;
+}
+
+.redAlert, .yellowAlert{
+    width: 20%;
+}
 
 /* END TEMPLES*/
 

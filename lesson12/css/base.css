@@ -105,7 +105,7 @@ html{
     text-align: center;
 }
 
-.weatherDays span{
+.weatherDays p{
     font-size: 20px;
     margin: 5px;
 }
@@ -118,10 +118,29 @@ html{
     padding: 0px 10px;
 }
 
-
-
 .weatherDays section{
     margin: 0px 10px;
+}
+
+.weatherDays img{
+    padding: 0px 30px;
+}
+
+.yellowAlert{
+    background-color: #ffff6d;
+    padding: 10px;
+    margin: 20px;
+}
+
+.redAlert{
+    background-color: #fe9a9a;
+    padding: 10px;
+    margin: 20px;
+}
+
+.btnAlert{
+    float: right;
+    height: 25px;
 }
 
 
