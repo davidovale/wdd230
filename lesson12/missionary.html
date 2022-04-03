@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Full-time Temple Missionary</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This page that provides information and images about the suites offered at the 
+        hotel with a simple Contact Us form for more details.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/base.css">
+
+        <link type="text/css" rel="stylesheet" href="css/medium.css">
+        <link type="text/css" rel="stylesheet" href="css/small.css">
+        <link type="text/css" rel="stylesheet" href="css/large.css">
+    </head>
+    <body onload="date()">
+        <header>
+            
+            <div class="content-header">
+                <div class="img-name">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                    
+                </div>
+                <div class="images-header">
+                    <a target="blank" href="https://www.facebook.com/">
+                        <img src="images/facebook.png" alt="Facebook icon" class="img-facebook"/>
+                    </a>            
+                    <a target="blank" href="https://linkedin.com/">
+                        <img src="images/linkedin.png" alt="LinkIn icon" class="img-linkedin"/>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Us Now!</h2>
+                    <h3>+1 (310) 945-7354</h3>
+                    <h3>temple_hotel@reserves.com</h3>
+                </div>
+            </div>
+            <div class="header-date" style="display: none;">
+                <p id="date"></p>
+            </div>
+            <div id="weather" style="display: none;">
+                <div class="weather">
+                    <!-- JSON FILE-->
+                </div>
+                <div class="weatherDays">
+
+                </div>
+            </div>
+            <div class="temple-list" style="display: none;">
+                <select id="templesList" class="templesList">
+
+                </select>
+            </div>
+            <div id="temples" class="temples" style="display: none;"></div>
+            
+            <!-- NAVIGATION HERE -->
+            <nav>
+                <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temples</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li class="active"><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="temples" class="temples" style="display: none;"></div>
+            <div class="newLinks">
+                <a href="reception.html">Reception</a>
+                <a href="missionary.html">Full-time temple missionary</a>
+            </div>
+            <h1>Room Information</h1>
+            <div class="roomInformation">
+                <section class="sectionRoom">
+                    <h2>Family Room</h2>
+                    <div><img src="images/room02.webp" alt="Room02" id="img02"></div>
+                    <h3>1 double bed</h3>
+                    <h3>4 single bad</h3>
+                    <h3>Freezer, TV, LDS Games</h3>
+                    <h3>Air conditioning</h3>
+                </section>
+                <section class="sectionRoom">
+                    <h2>Full time Missionary Room (Single)</h2>
+                    <div><img src="images/room05.webp" alt="Room05"></div>
+                    <h3>4 single bad</h3>
+                    <h3>Freezer, TV</h3>
+                    <h3>Liahona, Ensign</h3>
+                    <h3>Missionary Library</h3>
+                    <h3>Missionary Movies</h3>
+                    <h3>Air conditioning</h3>
+                </section>
+                <section class="sectionRoom">
+                    <h2>Full time Missionary Room (Couple)</h2>
+                    <div><img src="images/room01.jpg" alt="Room01"></div>
+                    <h3>1 double bad</h3>
+                    <h3>Freezer, TV</h3>
+                    <h3>Liahona, Ensign</h3>
+                    <h3>Missionary Library</h3>
+                    <h3>Missionary Movies</h3>
+                    <h3>Air conditioning</h3>
+                </section>
+                <section class="sectionRoom">
+                    <h2>Wedding Room</h2>
+                    <div><img src="images/room03.webp" alt="Room03"></div>
+                        <h3>1 double bed</h3>
+                        <h3>4 single bad</h3>
+                        <h3>Freezer, TV, LDS Games</h3>
+                        <h3>Air conditioning</h3>
+                </section>
+                <section class="sectionRoom">
+                    <h2>Single Adults Room</h2>
+                    <div><img src="images/room04.webp" alt="Room04"></div>
+                    <h3>5 single bad</h3>
+                    <h3>Freezer, TV, LDS Games</h3>
+                    <h3>Liahona, Ensign</h3>
+                    <h3>Air conditioning</h3>
+                </section>
+            </div>
+            <form name="myForm" method="get" action="thankyou.html">
+                <div class="simple-contact">
+                    <section class="personalInformation">
+                        <div>
+                            <h2>Contact Us</h2>
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" class="fullName" required placeholder="Toddy Callister Smith">
+                        </div>
+                        <div>
+                            <label for="txtEmail">Email <span class="required">*</span></label>
+                            <input type="email" id="txtEmail" name="txtEmail" placeholder="example@gmail.com" required>
+                        </div>
+                        <div>  
+                            <label for="tel">Tel <span class="required">*</span></label>
+                            <input type="tel" id="tel" name="tel" required placeholder="+55 43 30274012">
+                        </div>
+                        <input type="submit" value="Submit Contact" class="btnSubmitContact">
+                    </section>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="background-footer">
+                <div class="back-footer">
+                  <div class="test-flex">
+                    <img src="images/logo_blank.png" alt="Temple Inn & Suites" class="logo-header" id="img-top">
+                      
+                      <nav class="main-nav-footer">
+                          <label class="text-footer">4800 Montgomery Ln #300, Bethesda, MD 20814</label>
+                      </nav>
+                  </div>
+                  <div class="location-footer">
+                      <p>temple_hotel@reserves.com</p>
+                      <p>+1 (310) 945-7354</p>
+                      📍<a target="blank" href="https://goo.gl/maps/h9VWhbneSYemmfo57">Location Map</a>
+                  </div>
+                </div> 
+                <div class="content-footer">
+                      <p>
+                          <label id="copy"></label> 
+                          <label id="year"> </label> 
+                          <span class="lastModification"></span><label class="bar"> |</label> 
+                          <label id="davi"><b>&nbsp;Davi F. do Vale</b> </label>
+                      </p>
+                </div>
+                <div class="number-visits" style="display: none;">
+                    <p><span class="label-time">Number of Visits: </span>
+                        <span class="visits"></span></p>
+                </div> 
+            </div>
+        </footer>
+        <script src="js/temples.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

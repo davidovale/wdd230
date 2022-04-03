@@ -282,11 +282,6 @@ section{
     margin: 50px 20px;
 }
 
-.roomInformation{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .submit{
     margin: 5px 20px;
 }
@@ -343,6 +338,41 @@ section{
 .sectionGeneralServices{
     display: flex;
     flex-direction: row;
+}
+
+.roomInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sectionRoom img{
+    border-radius: 10%;
+}
+
+.sectionRoom:hover img{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.sectionRoom div{
+    text-align: center;
+}
+
+.roomInformation section:hover{
+    background-color: #c7deec;
+}
+
+.sectionRoom h2{
+    text-align: center;
+}
+
+.sectionRoom h3{
+    margin: 10px;
+}
+
+.btnSubmitContact{
+    margin: 10px;
 }
 
 
