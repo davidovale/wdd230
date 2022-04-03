@@ -1,7 +1,16 @@
 const requestURLW = 'https://api.openweathermap.org/data/2.5/weather?id=4348599&appid=70d99af3e605450038d66d76ee240672';
-const requestURLW2 = 'https://api.openweathermap.org/data/2.5/forecast?id=4348599&units=imperial&appid=2776b0619ca272f3d43719a8df7e1262';
+const requestURLW2 = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.980671&lon=-77.100258&exclude=current,hourly,minutely&appid=2776b0619ca272f3d43719a8df7e1262';
 const divweather = document.querySelector('.weather');
+const divweatherF = document.querySelector('.weatherDays');
 let windchill = "";
+let auxDaily = 0;
+const week = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+function takeWeek (value){
+  let day = new Date();
+
+  return week[day.getDay()+value];
+}
 
 function calcWindChill(t, s){
   if (t <= 50 && s > 3) {
@@ -26,6 +35,30 @@ function capitalize(string) {
     return string[0].toUpperCase() + string.slice(1);
 }
 
+function displayForecast(varForecast){
+  if(auxDaily > 0 && auxDaily < 4){
+    let sectionF = document.createElement('section')
+    let dayWeek = document.createElement('h2');
+    let desc = document.createElement('h3');
+    let imgF = document.createElement('img');
+    let tempF = document.createElement('span');
+
+    desc.textContent = capitalize(varForecast.weather[0].description);
+    auxImg = `http://openweathermap.org/img/wn/${varForecast.weather[0].icon}@2x.png`;
+    imgF.setAttribute('src', auxImg);
+    imgF.setAttribute('alt', varForecast.weather[0].description);
+    tempF.textContent = `${((varForecast.temp.day - 273.15) * (9/5) +32).toFixed(1)} ºF`;
+    tempF.setAttribute('class', 'negrito');
+    dayWeek.textContent = takeWeek(auxDaily);
+
+    sectionF.appendChild(dayWeek);
+    sectionF.appendChild(desc);
+    sectionF.appendChild(imgF);
+    sectionF.appendChild(tempF);
+    divweatherF.appendChild(sectionF);
+  }
+  auxDaily += 1;
+}
 
   function displayWeather(varWeather) {
 
@@ -70,4 +103,14 @@ function capitalize(string) {
     console.table(jsonObject);  
     const comp = jsonObject;
     displayWeather(comp);
+  });
+
+  fetch(requestURLW2)
+  .then(function (response2) {
+    return response2.json();
+  })
+  .then(function (jsonObject2) {
+    console.table(jsonObject2);  
+    const comp2 = jsonObject2['daily'];
+    comp2.forEach(displayForecast);
   });

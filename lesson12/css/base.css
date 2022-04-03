@@ -89,15 +89,25 @@ html{
     margin: 50px 10px 0px 10px;
 }
 
-.weather{
+.weather, .weatherDays{
     background-color: #b5daf0;
     padding: 2px;
 }
 
-.weather h2{
+.weather h2, .weatherDays h2{
     font-size: 20px;
     font-weight: bold;
     padding: 0px 10px;
+    text-align: center;
+}
+
+.weatherDays h3{
+    text-align: center;
+}
+
+.weatherDays span{
+    font-size: 20px;
+    margin: 5px;
 }
 
 .weather img{
@@ -106,6 +116,12 @@ html{
 
 .weather p{
     padding: 0px 10px;
+}
+
+
+
+.weatherDays section{
+    margin: 0px 10px;
 }
 
 
@@ -374,6 +390,12 @@ section{
 .btnSubmitContact{
     margin: 10px;
 }
+
+.mainRoomInfo, .personalInformation div h2{
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 0px 20px rgb(0 0 0 / 15%);
+}
+
+
 
 
 /* FORM */

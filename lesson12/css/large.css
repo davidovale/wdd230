@@ -46,7 +46,22 @@ section img{
     border: 1px solid #eeeeee;
 }
 
+#weather{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
 
+.weatherDays{
+    display: flex;
+    flex-direction: row;
+}
+
+.weatherDays section{
+    border-left: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
 
 
 /* END TEMPLES*/

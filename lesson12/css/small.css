@@ -92,4 +92,32 @@
         margin: 50px 0px;
     }
 
+    #weather{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #weather h2, #weather h3{
+        font-size: 1em;
+    }
+
+    #weather img{
+        width: 30%;
+    }
+    
+    .weatherDays{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .weatherDays section{
+        border-top: 1px solid black;
+    }
+
+    .negrito{
+        font-size: 0.8em;
+    }
+
 }
